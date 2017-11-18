@@ -749,7 +749,7 @@ Source: 3M</description>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="SV2" library="con-lsta" deviceset="FE20-2" device="" value="SFH11-PBPC-D20-ST-BK"/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
-<part name="X2" library="con-3m" deviceset="2516-" device="5" value="D2516-5002-AR"/>
+<part name="X1" library="con-3m" deviceset="2516-" device="5" value="D2516-5002-AR"/>
 </parts>
 <sheets>
 <sheet>
@@ -760,22 +760,22 @@ Source: 3M</description>
 <instance part="GND3" gate="1" x="66.04" y="162.56"/>
 <instance part="SV2" gate="G$1" x="53.34" y="205.74" rot="MR180"/>
 <instance part="GND2" gate="1" x="187.96" y="167.64"/>
-<instance part="X2" gate="-1" x="180.34" y="175.26" rot="MR180"/>
-<instance part="X2" gate="-2" x="180.34" y="177.8" rot="MR180"/>
-<instance part="X2" gate="-3" x="180.34" y="180.34" rot="MR180"/>
-<instance part="X2" gate="-4" x="180.34" y="182.88" rot="MR180"/>
-<instance part="X2" gate="-5" x="180.34" y="185.42" rot="MR180"/>
-<instance part="X2" gate="-6" x="180.34" y="187.96" rot="MR180"/>
-<instance part="X2" gate="-7" x="180.34" y="190.5" rot="MR180"/>
-<instance part="X2" gate="-8" x="180.34" y="193.04" rot="MR180"/>
-<instance part="X2" gate="-9" x="180.34" y="195.58" rot="MR180"/>
-<instance part="X2" gate="-10" x="180.34" y="198.12" rot="MR180"/>
-<instance part="X2" gate="-11" x="180.34" y="200.66" rot="MR180"/>
-<instance part="X2" gate="-12" x="180.34" y="203.2" rot="MR180"/>
-<instance part="X2" gate="-13" x="180.34" y="205.74" rot="MR180"/>
-<instance part="X2" gate="-14" x="180.34" y="208.28" rot="MR180"/>
-<instance part="X2" gate="-15" x="180.34" y="210.82" rot="MR180"/>
-<instance part="X2" gate="-16" x="180.34" y="213.36" rot="MR180"/>
+<instance part="X1" gate="-1" x="180.34" y="213.36"/>
+<instance part="X1" gate="-2" x="180.34" y="210.82"/>
+<instance part="X1" gate="-3" x="180.34" y="208.28"/>
+<instance part="X1" gate="-4" x="180.34" y="205.74"/>
+<instance part="X1" gate="-5" x="180.34" y="203.2"/>
+<instance part="X1" gate="-6" x="180.34" y="200.66"/>
+<instance part="X1" gate="-7" x="180.34" y="198.12"/>
+<instance part="X1" gate="-8" x="180.34" y="195.58"/>
+<instance part="X1" gate="-9" x="180.34" y="193.04"/>
+<instance part="X1" gate="-10" x="180.34" y="190.5"/>
+<instance part="X1" gate="-11" x="180.34" y="187.96"/>
+<instance part="X1" gate="-12" x="180.34" y="185.42"/>
+<instance part="X1" gate="-13" x="180.34" y="182.88"/>
+<instance part="X1" gate="-14" x="180.34" y="180.34"/>
+<instance part="X1" gate="-15" x="180.34" y="177.8"/>
+<instance part="X1" gate="-16" x="180.34" y="175.26"/>
 </instances>
 <busses>
 </busses>
@@ -844,9 +844,9 @@ Source: 3M</description>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="187.96" y1="170.18" x2="187.96" y2="200.66" width="0.1524" layer="91"/>
 <junction x="187.96" y="200.66"/>
-<pinref part="X2" gate="-11" pin="KL"/>
-<pinref part="X2" gate="-13" pin="KL"/>
-<pinref part="X2" gate="-15" pin="KL"/>
+<pinref part="X1" gate="-2" pin="KL"/>
+<pinref part="X1" gate="-4" pin="KL"/>
+<pinref part="X1" gate="-6" pin="KL"/>
 </segment>
 </net>
 <net name="SMOOTHIE_TX" class="0">
@@ -860,7 +860,7 @@ Source: 3M</description>
 <segment>
 <wire x1="185.42" y1="203.2" x2="193.04" y2="203.2" width="0.1524" layer="91"/>
 <label x="193.04" y="203.2" size="1.27" layer="95" xref="yes"/>
-<pinref part="X2" gate="-12" pin="KL"/>
+<pinref part="X1" gate="-5" pin="KL"/>
 </segment>
 </net>
 <net name="SMOOTHIE_RX" class="0">
@@ -874,7 +874,7 @@ Source: 3M</description>
 <segment>
 <wire x1="185.42" y1="208.28" x2="193.04" y2="208.28" width="0.1524" layer="91"/>
 <label x="193.04" y="208.28" size="1.27" layer="95" xref="yes"/>
-<pinref part="X2" gate="-14" pin="KL"/>
+<pinref part="X1" gate="-3" pin="KL"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -893,7 +893,7 @@ Source: 3M</description>
 <segment>
 <wire x1="185.42" y1="213.36" x2="193.04" y2="213.36" width="0.1524" layer="91"/>
 <label x="193.04" y="213.36" size="1.27" layer="95" xref="yes"/>
-<pinref part="X2" gate="-16" pin="KL"/>
+<pinref part="X1" gate="-1" pin="KL"/>
 </segment>
 </net>
 <net name="RED_CONTROL" class="0">
@@ -907,7 +907,7 @@ Source: 3M</description>
 <segment>
 <wire x1="185.42" y1="182.88" x2="193.04" y2="182.88" width="0.1524" layer="91"/>
 <label x="193.04" y="182.88" size="1.27" layer="95" xref="yes"/>
-<pinref part="X2" gate="-4" pin="KL"/>
+<pinref part="X1" gate="-13" pin="KL"/>
 </segment>
 </net>
 <net name="GREEN_CONTROL" class="0">
@@ -921,7 +921,7 @@ Source: 3M</description>
 <segment>
 <wire x1="185.42" y1="177.8" x2="193.04" y2="177.8" width="0.1524" layer="91"/>
 <label x="193.04" y="177.8" size="1.27" layer="95" xref="yes"/>
-<pinref part="X2" gate="-2" pin="KL"/>
+<pinref part="X1" gate="-15" pin="KL"/>
 </segment>
 </net>
 <net name="BLUE_CONTROL" class="0">
@@ -935,7 +935,7 @@ Source: 3M</description>
 <segment>
 <wire x1="185.42" y1="180.34" x2="193.04" y2="180.34" width="0.1524" layer="91"/>
 <label x="193.04" y="180.34" size="1.27" layer="95" xref="yes"/>
-<pinref part="X2" gate="-3" pin="KL"/>
+<pinref part="X1" gate="-14" pin="KL"/>
 </segment>
 </net>
 <net name="STRIP_CONTROL" class="0">
@@ -949,7 +949,7 @@ Source: 3M</description>
 <segment>
 <wire x1="185.42" y1="185.42" x2="193.04" y2="185.42" width="0.1524" layer="91"/>
 <label x="193.04" y="185.42" size="1.27" layer="95" xref="yes"/>
-<pinref part="X2" gate="-5" pin="KL"/>
+<pinref part="X1" gate="-12" pin="KL"/>
 </segment>
 </net>
 <net name="BUTTON_IN" class="0">
@@ -963,7 +963,7 @@ Source: 3M</description>
 <segment>
 <wire x1="185.42" y1="190.5" x2="193.04" y2="190.5" width="0.1524" layer="91"/>
 <label x="193.04" y="190.5" size="1.27" layer="95" xref="yes"/>
-<pinref part="X2" gate="-7" pin="KL"/>
+<pinref part="X1" gate="-10" pin="KL"/>
 </segment>
 </net>
 <net name="SMOOTHIE_RST" class="0">
@@ -977,7 +977,7 @@ Source: 3M</description>
 <segment>
 <wire x1="185.42" y1="193.04" x2="193.04" y2="193.04" width="0.1524" layer="91"/>
 <label x="193.04" y="193.04" size="1.27" layer="95" xref="yes"/>
-<pinref part="X2" gate="-8" pin="KL"/>
+<pinref part="X1" gate="-9" pin="KL"/>
 </segment>
 </net>
 <net name="SMOOTHIE_ISP" class="0">
@@ -991,7 +991,7 @@ Source: 3M</description>
 <segment>
 <wire x1="185.42" y1="195.58" x2="193.04" y2="195.58" width="0.1524" layer="91"/>
 <label x="193.04" y="195.58" size="1.27" layer="95" xref="yes"/>
-<pinref part="X2" gate="-9" pin="KL"/>
+<pinref part="X1" gate="-8" pin="KL"/>
 </segment>
 </net>
 <net name="SMOOTHIE_KILL" class="0">
@@ -1005,7 +1005,7 @@ Source: 3M</description>
 <segment>
 <wire x1="185.42" y1="198.12" x2="193.04" y2="198.12" width="0.1524" layer="91"/>
 <label x="193.04" y="198.12" size="1.27" layer="95" xref="yes"/>
-<pinref part="X2" gate="-10" pin="KL"/>
+<pinref part="X1" gate="-7" pin="KL"/>
 </segment>
 </net>
 <net name="AUDIO_ENABLE" class="0">
@@ -1019,14 +1019,14 @@ Source: 3M</description>
 <segment>
 <wire x1="185.42" y1="175.26" x2="193.04" y2="175.26" width="0.1524" layer="91"/>
 <label x="193.04" y="175.26" size="1.27" layer="95" xref="yes"/>
-<pinref part="X2" gate="-1" pin="KL"/>
+<pinref part="X1" gate="-16" pin="KL"/>
 </segment>
 </net>
 <net name="WINDOW_SWITCH" class="0">
 <segment>
 <wire x1="185.42" y1="187.96" x2="193.04" y2="187.96" width="0.1524" layer="91"/>
 <label x="193.04" y="187.96" size="1.27" layer="95" xref="yes"/>
-<pinref part="X2" gate="-6" pin="KL"/>
+<pinref part="X1" gate="-11" pin="KL"/>
 </segment>
 </net>
 </nets>
