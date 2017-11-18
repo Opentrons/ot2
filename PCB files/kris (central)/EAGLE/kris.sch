@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -21994,7 +21994,10 @@ Vref = 1.23V</text>
 </segment>
 <segment>
 <wire x1="27.94" y1="71.12" x2="20.32" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="71.12" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="71.12" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="68.58" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="68.58" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
+<junction x="20.32" y="68.58"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="27.94" y1="81.28" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="81.28" x2="20.32" y2="78.74" width="0.1524" layer="91"/>
@@ -22003,16 +22006,13 @@ Vref = 1.23V</text>
 <junction x="20.32" y="76.2"/>
 <wire x1="27.94" y1="78.74" x2="20.32" y2="78.74" width="0.1524" layer="91"/>
 <junction x="20.32" y="78.74"/>
-<wire x1="20.32" y1="76.2" x2="20.32" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="76.2" x2="20.32" y2="71.12" width="0.1524" layer="91"/>
 <junction x="20.32" y="71.12"/>
 <pinref part="COMMS" gate="A" pin="1"/>
 <pinref part="COMMS" gate="A" pin="3"/>
 <pinref part="COMMS" gate="A" pin="5"/>
 <pinref part="COMMS" gate="A" pin="9"/>
-<pinref part="COMMS" gate="A" pin="7"/>
-<wire x1="20.32" y1="73.66" x2="20.32" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="73.66" x2="20.32" y2="73.66" width="0.1524" layer="91"/>
-<junction x="20.32" y="73.66"/>
+<pinref part="COMMS" gate="A" pin="11"/>
 </segment>
 <segment>
 <wire x1="78.74" y1="73.66" x2="86.36" y2="73.66" width="0.1524" layer="91"/>
@@ -22241,17 +22241,26 @@ Vref = 1.23V</text>
 </net>
 <net name="DECK_PROBE_IN" class="0">
 <segment>
+<wire x1="35.56" y1="73.66" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
+<label x="40.64" y="73.66" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="COMMS" gate="A" pin="8"/>
+</segment>
+<segment>
 <wire x1="30.48" y1="127" x2="22.86" y2="127" width="0.1524" layer="91"/>
 <label x="22.86" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="PROBE" gate="A" pin="1"/>
 </segment>
-<segment>
-<wire x1="35.56" y1="68.58" x2="40.64" y2="68.58" width="0.1524" layer="91"/>
-<label x="40.64" y="68.58" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="COMMS" gate="A" pin="12"/>
-</segment>
 </net>
 <net name="SMOOTHIE_TX" class="0">
+<segment>
+<wire x1="248.92" y1="180.34" x2="246.38" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="180.34" x2="243.84" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="182.88" x2="246.38" y2="180.34" width="0.1524" layer="91"/>
+<junction x="246.38" y="180.34"/>
+<pinref part="Q8" gate="G$1" pin="S"/>
+<pinref part="R60" gate="G$1" pin="2"/>
+<label x="243.84" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 <segment>
 <pinref part="R-PI" gate="A" pin="5"/>
 <wire x1="43.18" y1="205.74" x2="35.56" y2="205.74" width="0.1524" layer="91"/>
@@ -22261,15 +22270,6 @@ Vref = 1.23V</text>
 <wire x1="50.8" y1="236.22" x2="43.18" y2="236.22" width="0.1524" layer="91"/>
 <label x="43.18" y="236.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="SERIAL" gate="A" pin="2"/>
-</segment>
-<segment>
-<wire x1="335.28" y1="213.36" x2="332.74" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="332.74" y1="213.36" x2="327.66" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="332.74" y1="215.9" x2="332.74" y2="213.36" width="0.1524" layer="91"/>
-<junction x="332.74" y="213.36"/>
-<pinref part="Q12" gate="G$1" pin="S"/>
-<pinref part="R76" gate="G$1" pin="2"/>
-<label x="327.66" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SMOOTHIE_RX" class="0">
@@ -22485,34 +22485,34 @@ Vref = 1.23V</text>
 </net>
 <net name="SMOOTHIE_KILL" class="0">
 <segment>
+<wire x1="335.28" y1="213.36" x2="332.74" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="213.36" x2="327.66" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="215.9" x2="332.74" y2="213.36" width="0.1524" layer="91"/>
+<junction x="332.74" y="213.36"/>
+<pinref part="Q12" gate="G$1" pin="S"/>
+<pinref part="R76" gate="G$1" pin="2"/>
+<label x="327.66" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <pinref part="R-PI" gate="A" pin="7"/>
 <wire x1="43.18" y1="203.2" x2="35.56" y2="203.2" width="0.1524" layer="91"/>
 <label x="35.56" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
-<segment>
-<wire x1="248.92" y1="180.34" x2="246.38" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="180.34" x2="243.84" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="182.88" x2="246.38" y2="180.34" width="0.1524" layer="91"/>
-<junction x="246.38" y="180.34"/>
-<pinref part="Q8" gate="G$1" pin="S"/>
-<pinref part="R60" gate="G$1" pin="2"/>
-<label x="243.84" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="SMOOTHIE_TX_12V" class="0">
 <segment>
-<wire x1="35.56" y1="76.2" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
-<label x="40.64" y="76.2" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="COMMS" gate="A" pin="6"/>
+<wire x1="259.08" y1="180.34" x2="261.62" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="180.34" x2="264.16" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="182.88" x2="261.62" y2="180.34" width="0.1524" layer="91"/>
+<junction x="261.62" y="180.34"/>
+<pinref part="Q8" gate="G$1" pin="D"/>
+<pinref part="R62" gate="G$1" pin="2"/>
+<label x="264.16" y="177.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="345.44" y1="213.36" x2="347.98" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="347.98" y1="213.36" x2="350.52" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="347.98" y1="215.9" x2="347.98" y2="213.36" width="0.1524" layer="91"/>
-<junction x="347.98" y="213.36"/>
-<pinref part="Q12" gate="G$1" pin="D"/>
-<pinref part="R79" gate="G$1" pin="2"/>
-<label x="350.52" y="210.82" size="1.27" layer="95" xref="yes"/>
+<wire x1="35.56" y1="71.12" x2="40.64" y2="71.12" width="0.1524" layer="91"/>
+<label x="40.64" y="71.12" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="COMMS" gate="A" pin="10"/>
 </segment>
 </net>
 <net name="SMOOTHIE_RX_12V" class="0">
@@ -22526,9 +22526,9 @@ Vref = 1.23V</text>
 <label x="307.34" y="177.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="35.56" y1="73.66" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
-<label x="40.64" y="73.66" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="COMMS" gate="A" pin="8"/>
+<wire x1="35.56" y1="68.58" x2="40.64" y2="68.58" width="0.1524" layer="91"/>
+<label x="40.64" y="68.58" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="COMMS" gate="A" pin="12"/>
 </segment>
 </net>
 <net name="SMOOTHIE_RST_12V" class="0">
@@ -22565,18 +22565,18 @@ Vref = 1.23V</text>
 </net>
 <net name="SMOOTHIE_KILL_12V" class="0">
 <segment>
-<wire x1="35.56" y1="71.12" x2="40.64" y2="71.12" width="0.1524" layer="91"/>
-<label x="40.64" y="71.12" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="COMMS" gate="A" pin="10"/>
+<wire x1="345.44" y1="213.36" x2="347.98" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="213.36" x2="350.52" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="215.9" x2="347.98" y2="213.36" width="0.1524" layer="91"/>
+<junction x="347.98" y="213.36"/>
+<pinref part="Q12" gate="G$1" pin="D"/>
+<pinref part="R79" gate="G$1" pin="2"/>
+<label x="350.52" y="210.82" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="259.08" y1="180.34" x2="261.62" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="180.34" x2="264.16" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="182.88" x2="261.62" y2="180.34" width="0.1524" layer="91"/>
-<junction x="261.62" y="180.34"/>
-<pinref part="Q8" gate="G$1" pin="D"/>
-<pinref part="R62" gate="G$1" pin="2"/>
-<label x="264.16" y="177.8" size="1.27" layer="95" xref="yes"/>
+<wire x1="35.56" y1="76.2" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
+<label x="40.64" y="76.2" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="COMMS" gate="A" pin="6"/>
 </segment>
 </net>
 <net name="36V" class="0">
@@ -22827,9 +22827,9 @@ Vref = 1.23V</text>
 <pinref part="PROBE" gate="A" pin="3"/>
 </segment>
 <segment>
-<pinref part="COMMS" gate="A" pin="11"/>
-<wire x1="27.94" y1="68.58" x2="17.78" y2="68.58" width="0.1524" layer="91"/>
-<label x="17.78" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="27.94" y1="73.66" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
+<label x="25.4" y="73.66" size="1.778" layer="95" ratio="17" rot="R180" xref="yes"/>
+<pinref part="COMMS" gate="A" pin="7"/>
 </segment>
 </net>
 <net name="AUDIO_ENABLE" class="0">
