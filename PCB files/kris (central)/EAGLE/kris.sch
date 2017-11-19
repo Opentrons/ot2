@@ -16197,7 +16197,6 @@ Source: www.kingbright.com</description>
 <part name="R4" library="microbuilder" deviceset="RESISTOR" device="0805" value="100"/>
 <part name="R5" library="microbuilder" deviceset="RESISTOR" device="0805" value="10K"/>
 <part name="X2" library="adafruit" deviceset="STEREOJACK" device=""/>
-<part name="C1" library="SparkFun" deviceset="CAP_POL" device="E" value="33uF"/>
 <part name="C15" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="C17" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="10uF"/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
@@ -16232,7 +16231,6 @@ Source: www.kingbright.com</description>
 <part name="Q2" library="transistor-fet" deviceset="SPD30P06P" device="TO252" value="SUD50P04-08-GE3"/>
 <part name="R89" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="D5" library="diode" deviceset="ZENER-DIODE" device="SMB" value="15v"/>
-<part name="LED" library="adafruit" deviceset="JST_2PIN" device="-THM"/>
 <part name="C22" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="10uF"/>
 <part name="C23" library="rcl" deviceset="C-EU" device="C0603" value=".1uF"/>
 <part name="U1" library="Myint_Lib" deviceset="LM2596" device="" value="LM2596S-5.0"/>
@@ -16251,6 +16249,8 @@ Source: www.kingbright.com</description>
 <part name="C74" library="rcl" deviceset="C-EU" device="C0603" value=".33uF"/>
 <part name="COMMS1" library="pinhead" deviceset="PINHD-2X6" device="" value="5-102619-4"/>
 <part name="U$1" library="Andy_Sigler" deviceset="HEADER-6" device=""/>
+<part name="C1" library="SparkFun" deviceset="CAP_POL" device="G" value="220uF"/>
+<part name="DOOR" library="adafruit" deviceset="JST_2PIN" device="-SMT-RA"/>
 </parts>
 <sheets>
 <sheet>
@@ -16362,7 +16362,6 @@ shutdown mode prior to power on/off operation
 <instance part="R4" gate="G$1" x="297.18" y="124.46"/>
 <instance part="R5" gate="G$1" x="276.86" y="96.52" rot="R270"/>
 <instance part="X2" gate="1" x="238.76" y="121.92" rot="MR0"/>
-<instance part="C1" gate="G$1" x="96.52" y="170.18"/>
 <instance part="C15" gate="G$1" x="185.42" y="175.26"/>
 <instance part="C17" gate="G$1" x="193.04" y="175.26"/>
 <instance part="GND1" gate="1" x="185.42" y="154.94"/>
@@ -16400,7 +16399,6 @@ shutdown mode prior to power on/off operation
 </instance>
 <instance part="R89" gate="G$1" x="139.7" y="226.06" rot="R270"/>
 <instance part="D5" gate="G$1" x="139.7" y="236.22" rot="R270"/>
-<instance part="LED" gate="G$1" x="121.92" y="83.82" rot="R180"/>
 <instance part="C22" gate="G$1" x="106.68" y="167.64"/>
 <instance part="C23" gate="G$1" x="114.3" y="170.18"/>
 <instance part="U1" gate="G$1" x="119.38" y="182.88"/>
@@ -16419,6 +16417,8 @@ shutdown mode prior to power on/off operation
 <instance part="C74" gate="G$1" x="172.72" y="127"/>
 <instance part="COMMS1" gate="A" x="76.2" y="78.74"/>
 <instance part="U$1" gate="G$1" x="210.82" y="53.34" rot="R90"/>
+<instance part="C1" gate="G$1" x="96.52" y="170.18"/>
+<instance part="DOOR" gate="G$1" x="121.92" y="83.82" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -16606,10 +16606,10 @@ shutdown mode prior to power on/off operation
 <pinref part="D1" gate="G$1" pin="P$1"/>
 <wire x1="147.32" y1="165.1" x2="147.32" y2="160.02" width="0.1524" layer="91"/>
 <junction x="147.32" y="160.02"/>
-<pinref part="C1" gate="G$1" pin="-"/>
 <wire x1="106.68" y1="160.02" x2="96.52" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="160.02" x2="96.52" y2="165.1" width="0.1524" layer="91"/>
 <junction x="106.68" y="160.02"/>
+<pinref part="C1" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="BUTTON" gate="A" pin="7"/>
@@ -17074,13 +17074,13 @@ shutdown mode prior to power on/off operation
 <pinref part="C22" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="172.72" x2="106.68" y2="182.88" width="0.1524" layer="91"/>
 <junction x="114.3" y="182.88"/>
-<pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="106.68" y1="182.88" x2="96.52" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="182.88" x2="96.52" y2="172.72" width="0.1524" layer="91"/>
 <junction x="96.52" y="182.88"/>
 <wire x1="96.52" y1="182.88" x2="96.52" y2="190.5" width="0.1524" layer="91"/>
 <label x="96.52" y="190.5" size="1.778" layer="95" xref="yes"/>
 <junction x="106.68" y="182.88"/>
+<pinref part="C1" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -17280,7 +17280,7 @@ shutdown mode prior to power on/off operation
 <segment>
 <wire x1="124.46" y1="83.82" x2="139.7" y2="83.82" width="0.1524" layer="91"/>
 <label x="139.7" y="83.82" size="1.27" layer="95" xref="yes"/>
-<pinref part="LED" gate="G$1" pin="2"/>
+<pinref part="DOOR" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="IC12" gate="A1" pin="VI"/>
@@ -17425,10 +17425,10 @@ shutdown mode prior to power on/off operation
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="LED" gate="G$1" pin="1"/>
 <pinref part="Q1" gate="G$1" pin="C"/>
 <wire x1="124.46" y1="81.28" x2="137.16" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="81.28" x2="137.16" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="DOOR" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="Y_MOTOR_2B" class="0">
