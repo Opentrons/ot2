@@ -234,38 +234,21 @@
 </package>
 </packages>
 </library>
-<library name="SparkFun">
-<description>Spark Fun Electronics' preferred foot prints. &lt;b&gt;Not to be used for commercial purposes.&lt;/b&gt; We've spent an enormous amount of time creating and checking these footprints and parts. If you enjoy using this library, please buy one of our products at www.sparkfun.com.</description>
+<library name="adafruit">
 <packages>
-<package name="1X03">
-<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="6.35" y1="0.635" x2="6.35" y2="-0.635" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="0.635" y="1.27" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<package name="JST-PH-3-THM">
+<wire x1="4" y1="-1.7" x2="0.5" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-1.7" x2="0.5" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-2.2" x2="-0.5" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-2.2" x2="-0.5" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-1.7" x2="-4" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-4" y1="-1.7" x2="-4" y2="2.8" width="0.127" layer="21"/>
+<wire x1="-4" y1="2.8" x2="4" y2="2.8" width="0.127" layer="21"/>
+<wire x1="4" y1="2.8" x2="4" y2="-1.7" width="0.127" layer="21"/>
+<pad name="2" x="0" y="0" drill="0.8" diameter="1.4224" rot="R180"/>
+<pad name="3" x="-2" y="0" drill="0.8" diameter="1.4224" rot="R180"/>
+<text x="-3.8" y="-3.5" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<pad name="1" x="2" y="0" drill="0.8" diameter="1.4224" rot="R180"/>
 </package>
 </packages>
 </library>
@@ -473,17 +456,14 @@ design rules under a new name.</description>
 <element name="Z" library="AndySigler_Opentrons" package="D2F-01L" value="ENDSTOPVERTICAL" x="12.5" y="14" rot="R90">
 <attribute name="HEIGHT" value="6.5" x="12.5" y="14" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="JP1" library="SparkFun" package="1X03" value="" x="16.71" y="8.53" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="17.98" y="9.165" size="0.4064" layer="28" rot="MR90"/>
-<attribute name="HEIGHT" value="12" x="16.71" y="8.53" size="1.778" layer="28" rot="MR90" display="off"/>
-</element>
+<element name="CN2" library="adafruit" package="JST-PH-3-THM" value="B3B-PH-K-S(LF)(SN)" x="16.5" y="10.8" rot="MR270"/>
 </elements>
 <signals>
 <signal name="LIM_POS">
 <contactref element="X-RIGHT" pad="COM"/>
-<contactref element="JP1" pad="1"/>
-<wire x1="16.71" y1="8.53" x2="18.84325" y2="8.53" width="0.6096" layer="1"/>
-<wire x1="18.84325" y1="8.53" x2="19.23325" y2="8.92" width="0.6096" layer="1"/>
+<contactref element="CN2" pad="1"/>
+<wire x1="16.5" y1="8.8" x2="19.11325" y2="8.8" width="0.6096" layer="1"/>
+<wire x1="19.11325" y1="8.8" x2="19.23325" y2="8.92" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="X-RIGHT" pad="NC"/>
@@ -525,18 +505,17 @@ design rules under a new name.</description>
 </signal>
 <signal name="LIM_NEG">
 <contactref element="X-LEFT" pad="NC"/>
-<contactref element="JP1" pad="3"/>
-<wire x1="16.71" y1="13.61" x2="15.41" y2="13.61" width="0.6096" layer="1"/>
-<wire x1="15.41" y1="13.61" x2="13.7" y2="11.9" width="0.6096" layer="1"/>
 <wire x1="13.7" y1="11.9" x2="4.7" y2="11.9" width="0.6096" layer="1"/>
 <wire x1="4.7" y1="11.9" x2="3.6" y2="13" width="0.6096" layer="1"/>
 <wire x1="3.6" y1="13" x2="3.6" y2="15.2" width="0.6096" layer="1"/>
 <wire x1="3.6" y1="15.2" x2="5.1" y2="16.7" width="0.6096" layer="1"/>
 <wire x1="5.1" y1="16.7" x2="5.1" y2="18.50675" width="0.6096" layer="1"/>
 <wire x1="5.1" y1="18.50675" x2="5.67325" y2="19.08" width="0.6096" layer="1"/>
+<contactref element="CN2" pad="3"/>
+<wire x1="16.5" y1="12.8" x2="14.6" y2="12.8" width="0.6096" layer="1"/>
+<wire x1="14.6" y1="12.8" x2="13.7" y2="11.9" width="0.6096" layer="1"/>
 </signal>
 <signal name="GND">
-<contactref element="JP1" pad="2"/>
 <polygon width="0.3048" layer="16">
 <vertex x="0" y="28"/>
 <vertex x="26" y="28"/>
@@ -570,6 +549,7 @@ design rules under a new name.</description>
 <via x="19.2" y="11.3" extent="1-16" drill="0.4"/>
 <via x="20" y="16.8" extent="1-16" drill="0.4"/>
 <via x="3.4" y="19.3" extent="1-16" drill="0.4"/>
+<contactref element="CN2" pad="2"/>
 </signal>
 </signals>
 </board>
