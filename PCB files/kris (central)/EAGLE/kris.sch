@@ -14915,23 +14915,23 @@ Source: www.kingbright.com</description>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
 <part name="Q8" library="SparkFun" deviceset="MOSFET-NCHANNEL" device="SMD" value="BSS138"/>
 <part name="R60" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10K"/>
-<part name="R62" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="20k"/>
+<part name="R62" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10k"/>
 <part name="P+11" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="Q9" library="SparkFun" deviceset="MOSFET-NCHANNEL" device="SMD" value="BSS138"/>
 <part name="R66" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10K"/>
-<part name="R67" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="20k"/>
+<part name="R67" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10k"/>
 <part name="P+12" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="Q10" library="SparkFun" deviceset="MOSFET-NCHANNEL" device="SMD" value="BSS138"/>
 <part name="R72" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10K"/>
-<part name="R73" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="20k"/>
+<part name="R73" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10k"/>
 <part name="P+13" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="Q11" library="SparkFun" deviceset="MOSFET-NCHANNEL" device="SMD" value="BSS138"/>
 <part name="R74" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10K"/>
-<part name="R75" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="20k"/>
+<part name="R75" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10k"/>
 <part name="P+15" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="Q12" library="SparkFun" deviceset="MOSFET-NCHANNEL" device="SMD" value="BSS138"/>
 <part name="R76" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10K"/>
-<part name="R79" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="20k"/>
+<part name="R79" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10k"/>
 <part name="P+19" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="U2" library="microbuilder" deviceset="AUDIOAMP_PAM8302A" device="" value="PAM8302AASCR"/>
 <part name="U$2" library="microbuilder" deviceset="GND" device=""/>

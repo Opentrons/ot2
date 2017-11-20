@@ -1642,7 +1642,7 @@ design rules under a new name.</description>
 <element name="R60" library="SparkFun" package="0603-RES" value="10K" x="45.23" y="37.471" smashed="yes" rot="R90">
 <attribute name="NAME" x="46.04" y="38.812" size="0.6096" layer="25" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="R62" library="SparkFun" package="0603-RES" value="20k" x="39.28" y="37.571" smashed="yes" rot="R270">
+<element name="R62" library="SparkFun" package="0603-RES" value="10k" x="39.28" y="37.571" smashed="yes" rot="R270">
 <attribute name="NAME" x="38.039" y="37.485" size="0.6096" layer="25" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="Q9" library="SparkFun" package="SOT23-3" value="BSS138" x="43.83" y="33.621" smashed="yes" rot="R90">
@@ -1651,7 +1651,7 @@ design rules under a new name.</description>
 <element name="R66" library="SparkFun" package="0603-RES" value="10K" x="46.83" y="33.621" smashed="yes" rot="R90">
 <attribute name="NAME" x="47.696" y="35.014" size="0.6096" layer="25" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="R67" library="SparkFun" package="0603-RES" value="20k" x="40.88" y="33.771" smashed="yes" rot="R270">
+<element name="R67" library="SparkFun" package="0603-RES" value="10k" x="40.88" y="33.771" smashed="yes" rot="R270">
 <attribute name="NAME" x="39.816" y="32.979" size="0.6096" layer="25" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="Q10" library="SparkFun" package="SOT23-3" value="BSS138" x="36.13" y="48.621" smashed="yes" rot="R90">
@@ -1660,7 +1660,7 @@ design rules under a new name.</description>
 <element name="R72" library="SparkFun" package="0603-RES" value="10K" x="39.13" y="48.621" smashed="yes" rot="R90">
 <attribute name="NAME" x="39.94" y="50.014" size="0.6096" layer="25" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="R73" library="SparkFun" package="0603-RES" value="20k" x="33.18" y="48.571" smashed="yes" rot="R270">
+<element name="R73" library="SparkFun" package="0603-RES" value="10k" x="33.18" y="48.571" smashed="yes" rot="R270">
 <attribute name="NAME" x="32.107" y="48.354" size="0.6096" layer="25" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="Q11" library="SparkFun" package="SOT23-3" value="BSS138" x="38.43" y="44.821" smashed="yes" rot="R90">
@@ -1669,7 +1669,7 @@ design rules under a new name.</description>
 <element name="R74" library="SparkFun" package="0603-RES" value="10K" x="41.53" y="44.821" smashed="yes" rot="R90">
 <attribute name="NAME" x="42.34" y="46.27" size="0.6096" layer="25" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="R75" library="SparkFun" package="0603-RES" value="20k" x="35.28" y="44.971" smashed="yes" rot="R270">
+<element name="R75" library="SparkFun" package="0603-RES" value="10k" x="35.28" y="44.971" smashed="yes" rot="R270">
 <attribute name="NAME" x="34.346" y="44.354" size="0.6096" layer="25" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="Q12" library="SparkFun" package="SOT23-3" value="BSS138" x="40.23" y="41.171" smashed="yes" rot="R90">
@@ -1678,7 +1678,7 @@ design rules under a new name.</description>
 <element name="R76" library="SparkFun" package="0603-RES" value="10K" x="43.23" y="41.171" smashed="yes" rot="R90">
 <attribute name="NAME" x="44.04" y="42.4" size="0.6096" layer="25" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="R79" library="SparkFun" package="0603-RES" value="20k" x="37.08" y="41.371" smashed="yes" rot="R270">
+<element name="R79" library="SparkFun" package="0603-RES" value="10k" x="37.08" y="41.371" smashed="yes" rot="R270">
 <attribute name="NAME" x="36.301" y="40.748" size="0.6096" layer="25" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="U2" library="microbuilder" package="MSOP8_0.65MM" value="PAM8302AASCR" x="36.557" y="24.199" smashed="yes" rot="R180">

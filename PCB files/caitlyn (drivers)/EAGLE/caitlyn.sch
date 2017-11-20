@@ -18794,12 +18794,11 @@ Stp</text>
 <wire x1="43.18" y1="50.8" x2="43.18" y2="43.18" width="0.1524" layer="91"/>
 <junction x="43.18" y="50.8"/>
 <junction x="50.8" y="50.8"/>
-<wire x1="50.8" y1="50.8" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
-<label x="17.78" y="60.96" size="1.778" layer="95" xref="yes"/>
-<wire x1="17.78" y1="50.8" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="50.8" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="50.8" x2="30.48" y2="50.8" width="0.1524" layer="91"/>
+<label x="30.48" y="60.96" size="1.778" layer="95" xref="yes"/>
+<wire x1="30.48" y1="50.8" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
 <junction x="30.48" y="50.8"/>
-<junction x="17.78" y="50.8"/>
+<junction x="30.48" y="50.8"/>
 </segment>
 <segment>
 <pinref part="IC13" gate="G$1" pin="VI"/>
