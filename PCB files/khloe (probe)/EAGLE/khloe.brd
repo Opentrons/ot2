@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -157,8 +157,8 @@
 </layers>
 <board>
 <plain>
-<hole x="3" y="4" drill="3.3"/>
-<hole x="22" y="24" drill="3.3"/>
+<hole x="3.25" y="4.25" drill="3.3"/>
+<hole x="21.75" y="23.75" drill="3.3"/>
 <wire x1="16" y1="21" x2="17.5" y2="21" width="0.01" layer="20"/>
 <wire x1="18" y1="20.5" x2="18" y2="15.5" width="0.01" layer="20"/>
 <wire x1="17.5" y1="15" x2="16" y2="15" width="0.01" layer="20"/>

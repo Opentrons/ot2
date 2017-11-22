@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1042,12 +1042,12 @@ Source: 3M</description>
 <instance part="GND3" gate="1" x="66.04" y="162.56"/>
 <instance part="SV2" gate="G$1" x="53.34" y="205.74" rot="MR180"/>
 <instance part="GND7" gate="1" x="124.46" y="109.22"/>
-<instance part="GND11" gate="1" x="121.92" y="48.26"/>
-<instance part="GND12" gate="1" x="157.48" y="48.26"/>
+<instance part="GND11" gate="1" x="124.46" y="144.78"/>
+<instance part="GND12" gate="1" x="160.02" y="144.78"/>
 <instance part="U$1" gate="G$1" x="208.28" y="124.46"/>
 <instance part="JP1" gate="A" x="134.62" y="119.38"/>
-<instance part="U$2" gate="G$1" x="114.3" y="58.42"/>
-<instance part="U$3" gate="G$1" x="149.86" y="58.42"/>
+<instance part="U$2" gate="G$1" x="116.84" y="154.94"/>
+<instance part="U$3" gate="G$1" x="152.4" y="154.94"/>
 <instance part="X2" gate="-1" x="180.34" y="175.26" rot="MR180"/>
 <instance part="X2" gate="-2" x="180.34" y="177.8" rot="MR180"/>
 <instance part="X2" gate="-3" x="180.34" y="180.34" rot="MR180"/>
@@ -1130,12 +1130,12 @@ Source: 3M</description>
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="157.48" y1="58.42" x2="157.48" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="154.94" x2="160.02" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="121.92" y1="58.42" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="154.94" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
@@ -1281,8 +1281,8 @@ Source: 3M</description>
 <pinref part="X2" gate="-8" pin="KL"/>
 </segment>
 <segment>
-<wire x1="106.68" y1="58.42" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
-<label x="101.6" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="109.22" y1="154.94" x2="104.14" y2="154.94" width="0.1524" layer="91"/>
+<label x="104.14" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$2" gate="G$1" pin="P$1"/>
 </segment>
 </net>
@@ -1295,8 +1295,8 @@ Source: 3M</description>
 <junction x="60.96" y="213.36"/>
 </segment>
 <segment>
-<wire x1="142.24" y1="58.42" x2="137.16" y2="58.42" width="0.1524" layer="91"/>
-<label x="137.16" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="144.78" y1="154.94" x2="139.7" y2="154.94" width="0.1524" layer="91"/>
+<label x="139.7" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$3" gate="G$1" pin="P$1"/>
 </segment>
 <segment>

@@ -1748,10 +1748,12 @@ design rules under a new name.</description>
 <element name="U1" library="Myint_Lib" package="TO-263-5L" value="LM2596S-5.0" x="15.657" y="79.555" smashed="yes" rot="R90">
 <attribute name="NAME" x="22.302" y="75.144" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="17.943" y="75.11" size="0.8128" layer="27" rot="R90"/>
+<attribute name="HEIGHT" value="5" x="15.657" y="79.555" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="L2" library="Myint_Lib" package="CDRH12XNP" value="68uH" x="35.074" y="80.145" smashed="yes">
 <attribute name="NAME" x="40.242" y="72.885" size="0.6096" layer="25"/>
 <attribute name="VALUE" x="33.042" y="81.288" size="0.8128" layer="27"/>
+<attribute name="HEIGHT" value="7" x="35.074" y="80.145" size="1.778" layer="27" display="off"/>
 </element>
 <element name="D1" library="Myint_Lib" package="DO214-AC_(SMA)" value="SS34" x="26.327" y="76.133" smashed="yes" rot="R90">
 <attribute name="NAME" x="28.994" y="75.752" size="0.6096" layer="25" rot="R90"/>
@@ -1790,9 +1792,11 @@ design rules under a new name.</description>
 </element>
 <element name="COMMS1" library="pinhead" package="2X06" value="5-102619-4" x="5.726" y="40.244" smashed="yes" rot="R270"/>
 <element name="C1" library="SparkFun" package="PANASONIC_G" value="220uF" x="14.2" y="68.1"/>
-<element name="DOOR" library="adafruit" package="JST-PH-2-SMT-RA" value="S2B-PH-SM4-TB(LF)(SN)" x="35.3" y="7.9" smashed="yes" rot="R180"/>
+<element name="DOOR" library="adafruit" package="JST-PH-2-SMT-RA" value="S2B-PH-SM4-TB(LF)(SN)" x="35.3" y="7.9" smashed="yes" rot="R180">
+<attribute name="HEIGHT" value="6" x="35.3" y="7.9" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 <element name="U$3" library="AndySigler_Opentrons" package="DC-POWER-4POS-0050361768" value="0050361768" x="26.9" y="11" smashed="yes" rot="R270">
-<attribute name="HEIGHT" value="15" x="26.9" y="11" size="1.27" layer="27" rot="R270" display="off"/>
+<attribute name="HEIGHT" value="10" x="26.9" y="11" size="1.27" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C10" library="SparkFun-Capacitors" package="PANASONIC_D" value="100uF" x="19.3" y="47.55" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.4" y="49" size="1.016" layer="25" rot="R270"/>
@@ -1812,9 +1816,15 @@ design rules under a new name.</description>
 <element name="C3" library="SparkFun-Capacitors" package="0805" value="1uF" x="39" y="29.4" rot="R90"/>
 <element name="R3" library="SparkFun" package="0603-RES" value="100k" x="35.2" y="16.4" rot="R90"/>
 <element name="R4" library="SparkFun" package="0603-RES" value="1k" x="32.6" y="16.5" rot="R90"/>
-<element name="CN1" library="adafruit" package="JSTPH3" value="S3B-PH-SM4-TB(LF)(SN)" x="45.4" y="8.9" smashed="yes" rot="R180"/>
-<element name="U$4" library="Andy_Sigler" package="JST-6POS-2MM" value="HEADER-6" x="4.7" y="59.1" rot="R90"/>
-<element name="U$1" library="AndySigler_Opentrons" package="SJ-43514-SMT-TR" value="SJ-43514-SMT-TR" x="59" y="21.5" smashed="yes" rot="R180"/>
+<element name="CN1" library="adafruit" package="JSTPH3" value="S3B-PH-SM4-TB(LF)(SN)" x="45.4" y="8.9" smashed="yes" rot="R180">
+<attribute name="HEIGHT" value="6" x="45.4" y="8.9" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="U$4" library="Andy_Sigler" package="JST-6POS-2MM" value="HEADER-6" x="4.7" y="59.1" rot="R90">
+<attribute name="HEIGHT" value="10" x="4.7" y="59.1" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="U$1" library="AndySigler_Opentrons" package="SJ-43514-SMT-TR" value="SJ-43514-SMT-TR" x="59" y="21.5" smashed="yes" rot="R180">
+<attribute name="HEIGHT" value="7" x="59" y="21.5" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 <element name="R5" library="SparkFun" package="0603-RES" value="100k" x="44.85" y="55.95"/>
 <element name="C4" library="SparkFun-Capacitors" package="0805" value="10uF" x="45.65" y="54.05" rot="R180"/>
 </elements>
