@@ -456,12 +456,14 @@ design rules under a new name.</description>
 <element name="Z" library="AndySigler_Opentrons" package="D2F-01L" value="ENDSTOPVERTICAL" x="12.5" y="14" rot="R90">
 <attribute name="HEIGHT" value="6.5" x="12.5" y="14" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="CN2" library="adafruit" package="JST-PH-3-THM" value="B3B-PH-K-S(LF)(SN)" x="16.5" y="10.8" rot="MR270"/>
+<element name="CN1" library="adafruit" package="JST-PH-3-THM" value="B3B-PH-K-S(LF)(SN)" x="16.5" y="10.8" rot="MR270">
+<attribute name="HEIGHT" value="8" x="16.5" y="10.8" size="1.778" layer="28" rot="MR270" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="LIM_POS">
 <contactref element="X-RIGHT" pad="COM"/>
-<contactref element="CN2" pad="1"/>
+<contactref element="CN1" pad="1"/>
 <wire x1="16.5" y1="8.8" x2="19.11325" y2="8.8" width="0.6096" layer="1"/>
 <wire x1="19.11325" y1="8.8" x2="19.23325" y2="8.92" width="0.6096" layer="1"/>
 </signal>
@@ -517,7 +519,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="LIM_NEG">
 <contactref element="X-LEFT" pad="NC"/>
-<contactref element="CN2" pad="3"/>
+<contactref element="CN1" pad="3"/>
 <wire x1="5.67325" y1="19.08" x2="5.67325" y2="17.67325" width="0.6096" layer="16"/>
 <wire x1="5.67325" y1="17.67325" x2="3.7" y2="15.7" width="0.6096" layer="16"/>
 <wire x1="3.7" y1="15.7" x2="3.7" y2="12" width="0.6096" layer="16"/>
@@ -541,7 +543,7 @@ design rules under a new name.</description>
 <vertex x="26" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
-<contactref element="CN2" pad="2"/>
+<contactref element="CN1" pad="2"/>
 <via x="12.7" y="25.7" extent="1-16" drill="0.4"/>
 <via x="12.6" y="3.3" extent="1-16" drill="0.4"/>
 <via x="1.9" y="14" extent="1-16" drill="0.4"/>

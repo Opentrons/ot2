@@ -439,7 +439,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="Y-BACK" library="AndySigler_Opentrons" deviceset="ENDSTOP" device="RIGHT"/>
 <part name="Y-FRONT" library="AndySigler_Opentrons" deviceset="ENDSTOP" device="LEFT"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="CN2" library="adafruit" deviceset="JST_3PIN" device="" value="B3B-PH-K-S(LF)(SN)"/>
+<part name="CN1" library="adafruit" deviceset="JST_3PIN" device="" value="B3B-PH-K-S(LF)(SN)"/>
 </parts>
 <sheets>
 <sheet>
@@ -458,7 +458,7 @@ When any 1 switch is pressed, PROBE pin will be pulled HIGH by its pullup resist
 <instance part="Y-BACK" gate="G$1" x="203.2" y="144.78" rot="R90"/>
 <instance part="Y-FRONT" gate="G$1" x="187.96" y="144.78" rot="R90"/>
 <instance part="GND1" gate="1" x="276.86" y="124.46"/>
-<instance part="CN2" gate="G$1" x="287.02" y="132.08"/>
+<instance part="CN1" gate="G$1" x="287.02" y="132.08"/>
 </instances>
 <busses>
 </busses>
@@ -468,7 +468,7 @@ When any 1 switch is pressed, PROBE pin will be pulled HIGH by its pullup resist
 <wire x1="284.48" y1="134.62" x2="220.98" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="X-RIGHT" gate="G$1" pin="COM"/>
 <wire x1="220.98" y1="134.62" x2="220.98" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="CN2" gate="G$1" pin="1"/>
+<pinref part="CN1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -514,7 +514,7 @@ When any 1 switch is pressed, PROBE pin will be pulled HIGH by its pullup resist
 <wire x1="251.46" y1="127" x2="154.94" y2="127" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="129.54" x2="251.46" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="129.54" x2="251.46" y2="127" width="0.1524" layer="91"/>
-<pinref part="CN2" gate="G$1" pin="3"/>
+<pinref part="CN1" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -522,7 +522,7 @@ When any 1 switch is pressed, PROBE pin will be pulled HIGH by its pullup resist
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="284.48" y1="132.08" x2="276.86" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="132.08" x2="276.86" y2="127" width="0.1524" layer="91"/>
-<pinref part="CN2" gate="G$1" pin="2"/>
+<pinref part="CN1" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
