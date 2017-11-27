@@ -14944,7 +14944,7 @@ Source: www.kingbright.com</description>
 <part name="C18" library="SparkFun" deviceset="CAP_POL" device="G" value="330uF"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 <part name="C14" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="22uF"/>
-<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="MMBT2222A" value="MMBT2222A (1amp)"/>
+<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="MMBT2222A" value="SI2302-TP (3amp)"/>
 <part name="PI-SUPPLY" library="SquantorUsb" deviceset="USB-SHIELD" device="" value="UE27AC54100"/>
 <part name="IC13" library="logxen" deviceset="R-78" device="" value="R-78C12-1.0"/>
 <part name="GND8" library="SparkFun" deviceset="GND" device=""/>

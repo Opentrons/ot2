@@ -1700,7 +1700,7 @@ design rules under a new name.</description>
 <element name="C14" library="SparkFun-Capacitors" package="0805" value="22uF" x="20.528" y="42.613" smashed="yes">
 <attribute name="NAME" x="22.358" y="42.4465" size="0.6096" layer="25" font="vector" ratio="10"/>
 </element>
-<element name="Q1" library="SparkFun-DiscreteSemi" package="SOT23-3" value="MMBT2222A (1amp)" x="38.039" y="16.473" smashed="yes" rot="R270">
+<element name="Q1" library="SparkFun-DiscreteSemi" package="SOT23-3" value="SI2302-TP (3amp)" x="38.039" y="16.473" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="TRANS-08049" x="38.039" y="16.473" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="39.653" y="17.1755" size="0.6096" layer="25" font="vector" ratio="10" rot="R90"/>
 </element>
