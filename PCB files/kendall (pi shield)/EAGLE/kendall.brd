@@ -2908,14 +2908,28 @@ design rules under a new name.</description>
 <vertex x="-0.127" y="0"/>
 <vertex x="6.731" y="0.142"/>
 </polygon>
-<via x="11.223" y="11.225" extent="1-16" drill="0.4"/>
+<via x="11.123" y="12.325" extent="1-16" drill="0.4"/>
 <via x="9.826" y="8.304" extent="1-16" drill="0.4"/>
-<via x="8.937" y="9.574" extent="1-16" drill="0.4"/>
-<via x="14.144" y="-2.618" extent="1-16" drill="0.4"/>
+<via x="11.444" y="-5.018" extent="1-16" drill="0.4"/>
 <via x="14.906" y="-11.381" extent="1-16" drill="0.4"/>
 <via x="9.191" y="-16.207" extent="1-16" drill="0.4"/>
 <via x="9.191" y="-17.477" extent="1-16" drill="0.4"/>
 <via x="9.191" y="-18.874" extent="1-16" drill="0.4"/>
+<via x="3.544" y="3.282" extent="1-16" drill="0.4"/>
+<via x="1.044" y="3.182" extent="1-16" drill="0.4"/>
+<via x="11.344" y="7.582" extent="1-16" drill="0.4"/>
+<via x="1.044" y="13.282" extent="1-16" drill="0.4"/>
+<via x="3.444" y="20.882" extent="1-16" drill="0.4"/>
+<via x="13.744" y="37.582" extent="1-16" drill="0.4"/>
+<via x="13.544" y="38.982" extent="1-16" drill="0.4"/>
+<via x="14.944" y="45.382" extent="1-16" drill="0.4"/>
+<via x="14.944" y="41.582" extent="1-16" drill="0.4"/>
+<via x="14.944" y="-23.118" extent="1-16" drill="0.4"/>
+<via x="3.344" y="33.482" extent="1-16" drill="0.4"/>
+<via x="3.444" y="36.082" extent="1-16" drill="0.4"/>
+<via x="3.444" y="38.682" extent="1-16" drill="0.4"/>
+<via x="3.444" y="46.282" extent="1-16" drill="0.4"/>
+<via x="3.444" y="43.682" extent="1-16" drill="0.4"/>
 </signal>
 <signal name="SMOOTHIE_TX">
 <contactref element="U$1" pad="COM-B"/>
@@ -2947,10 +2961,10 @@ design rules under a new name.</description>
 <wire x1="0.889" y1="31.151" x2="2.23" y2="29.81" width="0.6096" layer="1"/>
 <wire x1="2.23" y1="29.81" x2="3.465" y2="28.575" width="0.6096" layer="1"/>
 <wire x1="3.465" y1="28.575" x2="6.477" y2="28.575" width="0.6096" layer="1"/>
-<wire x1="6.477" y1="28.575" x2="8.763" y2="26.289" width="0.6096" layer="1"/>
-<wire x1="8.763" y1="26.289" x2="8.763" y2="11.303" width="0.6096" layer="1"/>
-<wire x1="8.763" y1="11.303" x2="12.77" y2="7.296" width="0.6096" layer="1"/>
-<wire x1="12.77" y1="7.296" x2="12.77" y2="6.39" width="0.6096" layer="1"/>
+<wire x1="6.477" y1="28.575" x2="7.263" y2="27.789" width="0.6096" layer="1"/>
+<wire x1="7.263" y1="27.789" x2="7.263" y2="18.803" width="0.6096" layer="1"/>
+<wire x1="7.263" y1="18.803" x2="12.77" y2="13.296" width="0.6096" layer="1"/>
+<wire x1="12.77" y1="13.296" x2="12.77" y2="6.39" width="0.6096" layer="1"/>
 </signal>
 <signal name="RED_CONTROL">
 <contactref element="SV2" pad="37"/>
@@ -2994,28 +3008,31 @@ design rules under a new name.</description>
 <signal name="STRIP_CONTROL">
 <contactref element="SV2" pad="31"/>
 <contactref element="X2" pad="1"/>
-<wire x1="2.23" y1="12.03" x2="2.23" y2="12.009" width="0.4064" layer="1"/>
-<wire x1="7.874" y1="-6.604" x2="7.874" y2="-9.952" width="0.6096" layer="1"/>
-<wire x1="7.874" y1="-9.952" x2="9.312" y2="-11.39" width="0.6096" layer="1"/>
-<wire x1="9.312" y1="-11.39" x2="10.23" y2="-11.39" width="0.6096" layer="1"/>
-<wire x1="7.874" y1="-6.604" x2="2.23" y2="12.009" width="0" layer="19" extent="1-1"/>
+<wire x1="10.23" y1="-11.39" x2="10.23" y2="-12.33" width="0.6096" layer="16"/>
+<wire x1="10.23" y1="-12.33" x2="11.2" y2="-13.3" width="0.6096" layer="16"/>
+<wire x1="11.2" y1="-13.3" x2="15.3" y2="-13.3" width="0.6096" layer="16"/>
+<wire x1="15.3" y1="-13.3" x2="16" y2="-12.6" width="0.6096" layer="16"/>
+<wire x1="16" y1="-12.6" x2="16" y2="6.6" width="0.6096" layer="16"/>
+<wire x1="16" y1="6.6" x2="11.6" y2="11" width="0.6096" layer="16"/>
+<via x="11.6" y="11" extent="1-16" drill="0.4"/>
+<wire x1="11.6" y1="11" x2="8" y2="11" width="0.6096" layer="1"/>
+<wire x1="8" y1="11" x2="5.7" y2="13.3" width="0.6096" layer="1"/>
+<wire x1="5.7" y1="13.3" x2="3.7" y2="13.3" width="0.4064" layer="1"/>
+<wire x1="3.7" y1="13.3" x2="3.5" y2="13.3" width="0.6096" layer="1"/>
+<wire x1="3.5" y1="13.3" x2="2.23" y2="12.03" width="0.6096" layer="1"/>
 </signal>
 <signal name="BUTTON_IN">
 <contactref element="SV2" pad="29"/>
 <contactref element="X2" pad="13"/>
-<wire x1="7.366" y1="13.335" x2="8.001" y2="12.7" width="0.4064" layer="1"/>
-<wire x1="8.001" y1="12.7" x2="8.001" y2="8.763" width="0.4064" layer="1"/>
-<wire x1="8.001" y1="8.763" x2="8.255" y2="8.509" width="0.4064" layer="1"/>
-<via x="8.255" y="8.509" extent="1-16" drill="0.4"/>
-<wire x1="8.255" y1="8.509" x2="8.001" y2="8.255" width="0.4064" layer="16"/>
-<wire x1="8.001" y1="8.255" x2="8.001" y2="6.079" width="0.4064" layer="16"/>
-<wire x1="8.001" y1="6.079" x2="10.23" y2="3.85" width="0.4064" layer="16"/>
-<wire x1="2.23" y1="14.57" x2="2.37" y2="14.57" width="0.4064" layer="1"/>
-<wire x1="2.37" y1="14.57" x2="3.6" y2="15.8" width="0.4064" layer="1"/>
-<wire x1="3.6" y1="15.8" x2="6.2" y2="15.8" width="0.4064" layer="1"/>
-<wire x1="6.2" y1="15.8" x2="7.4" y2="14.6" width="0.4064" layer="1"/>
-<wire x1="7.4" y1="14.6" x2="7.4" y2="13.369" width="0.4064" layer="1"/>
-<wire x1="7.4" y1="13.369" x2="7.366" y2="13.335" width="0.4064" layer="1"/>
+<wire x1="10.23" y1="3.85" x2="10.23" y2="4.07" width="0.6096" layer="16"/>
+<wire x1="10.23" y1="4.07" x2="8.7" y2="5.6" width="0.6096" layer="16"/>
+<wire x1="8.7" y1="5.6" x2="8.7" y2="12.9" width="0.6096" layer="16"/>
+<wire x1="8.7" y1="12.9" x2="8.4" y2="13.2" width="0.6096" layer="16"/>
+<via x="8.4" y="13.2" extent="1-16" drill="0.4"/>
+<wire x1="8.4" y1="13.2" x2="5.8" y2="15.8" width="0.6096" layer="1"/>
+<wire x1="5.8" y1="15.8" x2="3.6" y2="15.8" width="0.4064" layer="1"/>
+<wire x1="3.6" y1="15.8" x2="3.46" y2="15.8" width="0.6096" layer="1"/>
+<wire x1="3.46" y1="15.8" x2="2.23" y2="14.57" width="0.6096" layer="1"/>
 </signal>
 <signal name="SMOOTHIE_RST">
 <contactref element="SV2" pad="18"/>
@@ -3061,12 +3078,19 @@ design rules under a new name.</description>
 <signal name="SMOOTHIE_KILL">
 <contactref element="SV2" pad="12"/>
 <contactref element="X2" pad="6"/>
-<wire x1="10.922" y1="-2.54" x2="11.43" y2="-3.048" width="0.4064" layer="16"/>
-<wire x1="11.43" y1="-3.048" x2="11.43" y2="-4.97" width="0.4064" layer="16"/>
-<wire x1="11.43" y1="-4.97" x2="12.77" y2="-6.31" width="0.4064" layer="16"/>
 <wire x1="4.77" y1="37.43" x2="5.27" y2="37.43" width="0.6096" layer="16"/>
-<wire x1="5.27" y1="37.43" x2="7.3" y2="35.4" width="0.6096" layer="16"/>
-<wire x1="10.922" y1="-2.54" x2="7.3" y2="35.4" width="0" layer="19" extent="16-16"/>
+<wire x1="5.27" y1="37.43" x2="8.6" y2="34.1" width="0.6096" layer="16"/>
+<wire x1="12.77" y1="-6.31" x2="13.69" y2="-6.31" width="0.6096" layer="16"/>
+<wire x1="13.69" y1="-6.31" x2="14.5" y2="-5.5" width="0.6096" layer="16"/>
+<wire x1="14.5" y1="-5.5" x2="14.5" y2="6.9" width="0.6096" layer="16"/>
+<wire x1="14.5" y1="6.9" x2="12.6" y2="8.8" width="0.6096" layer="16"/>
+<wire x1="12.6" y1="8.8" x2="11" y2="8.8" width="0.6096" layer="16"/>
+<wire x1="11" y1="8.8" x2="9.7" y2="10.1" width="0.6096" layer="16"/>
+<wire x1="9.7" y1="10.1" x2="9.7" y2="14.1" width="0.6096" layer="16"/>
+<wire x1="9.7" y1="14.1" x2="8.3" y2="15.5" width="0.6096" layer="16"/>
+<wire x1="8.3" y1="15.5" x2="8.3" y2="28.6" width="0.6096" layer="16"/>
+<wire x1="8.3" y1="28.6" x2="8.6" y2="28.9" width="0.6096" layer="16"/>
+<wire x1="8.6" y1="28.9" x2="8.6" y2="34.1" width="0.6096" layer="16"/>
 </signal>
 <signal name="AUDIO_ENABLE">
 <contactref element="SV2" pad="40"/>
@@ -3081,9 +3105,13 @@ design rules under a new name.</description>
 <signal name="SMOOTHIE_RX_PI">
 <contactref element="SV2" pad="8"/>
 <contactref element="U$1" pad="1-A"/>
-<wire x1="12.25" y1="16" x2="11.3" y2="16" width="0.6096" layer="16"/>
-<wire x1="11.3" y1="16" x2="10.7" y2="16.6" width="0.6096" layer="16"/>
-<wire x1="10.7" y1="16.6" x2="4.77" y2="42.51" width="0" layer="19" extent="1-16"/>
+<wire x1="12.25" y1="16" x2="11.7" y2="16" width="0.6096" layer="1"/>
+<wire x1="11.7" y1="16" x2="8.9" y2="18.8" width="0.6096" layer="1"/>
+<wire x1="8.9" y1="18.8" x2="8.9" y2="40.7" width="0.6096" layer="1"/>
+<wire x1="8.9" y1="40.7" x2="10.2" y2="42" width="0.6096" layer="1"/>
+<via x="10.2" y="42" extent="1-16" drill="0.4"/>
+<wire x1="10.2" y1="42" x2="5.28" y2="42" width="0.6096" layer="16"/>
+<wire x1="5.28" y1="42" x2="4.77" y2="42.51" width="0.6096" layer="16"/>
 </signal>
 <signal name="SMOOTHIE_TX_PI">
 <contactref element="SV2" pad="10"/>
