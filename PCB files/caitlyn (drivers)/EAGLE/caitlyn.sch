@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -15539,62 +15539,92 @@ Added bigger pads to the TO-92 package</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="Header">
+<library name="AndySigler_Opentrons">
 <packages>
-<package name="IDC2X3_2.54MM">
-<pad name="1" x="-2.54" y="-1.27" drill="1" diameter="1.5" shape="square"/>
-<pad name="2" x="-2.54" y="1.27" drill="1" diameter="1.5"/>
-<pad name="3" x="0" y="-1.27" drill="1" diameter="1.5"/>
-<pad name="4" x="0" y="1.27" drill="1" diameter="1.5"/>
-<pad name="5" x="2.54" y="-1.27" drill="1" diameter="1.5"/>
-<pad name="6" x="2.54" y="1.27" drill="1" diameter="1.5"/>
-<wire x1="-6.604" y1="3.302" x2="6.604" y2="3.302" width="0.2" layer="21"/>
-<wire x1="6.604" y1="3.302" x2="6.604" y2="-3.302" width="0.2" layer="21"/>
-<wire x1="6.604" y1="-3.302" x2="-6.604" y2="-3.302" width="0.2" layer="21"/>
-<wire x1="-6.604" y1="-3.302" x2="-6.604" y2="3.302" width="0.2" layer="21"/>
-<wire x1="-7.62" y1="4.318" x2="7.62" y2="4.318" width="0.2" layer="21"/>
-<wire x1="7.62" y1="4.318" x2="7.62" y2="-4.318" width="0.2" layer="21"/>
-<wire x1="7.62" y1="-4.318" x2="-7.62" y2="-4.318" width="0.2" layer="21"/>
-<wire x1="-7.62" y1="-4.318" x2="-7.62" y2="4.318" width="0.2" layer="21"/>
-<rectangle x1="-2.54" y1="-4.318" x2="2.54" y2="-3.302" layer="21"/>
-<text x="-7.493" y="4.699" size="0.8128" layer="25">&gt;NAME</text>
-<text x="-6.223" y="2.159" size="0.8128" layer="27">&gt;VAULE</text>
-<text x="-4.318" y="-1.778" size="0.8128" layer="51">1</text>
-<text x="-4.318" y="0.762" size="0.8128" layer="51">2</text>
-<text x="3.81" y="-1.778" size="0.8128" layer="51">5</text>
-<text x="3.81" y="0.762" size="0.8128" layer="51">6</text>
+<package name="JST-2MM-4POS-SOCKET">
+<pad name="P$1" x="-3" y="0" drill="0.7"/>
+<pad name="P$2" x="-1" y="0" drill="0.7"/>
+<pad name="P$3" x="1" y="0" drill="0.7"/>
+<pad name="P$4" x="3" y="0" drill="0.7"/>
+<wire x1="-4.95" y1="2.25" x2="4.95" y2="2.25" width="0.127" layer="21"/>
+<wire x1="4.95" y1="2.25" x2="4.95" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="4.95" y1="-2.25" x2="-4.95" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="-4.95" y1="-2.25" x2="-4.95" y2="2.25" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-1.75" x2="4.5" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-1.75" x2="4.5" y2="1.75" width="0.127" layer="21"/>
+<wire x1="4.5" y1="1.75" x2="1" y2="1.75" width="0.127" layer="21"/>
+<wire x1="1" y1="1.75" x2="1" y2="1.25" width="0.127" layer="21"/>
+<wire x1="1" y1="1.25" x2="-1" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-1" y1="1.25" x2="-1" y2="1.75" width="0.127" layer="21"/>
+<wire x1="-1" y1="1.75" x2="-4.5" y2="1.75" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="1.75" x2="-4.5" y2="-1.75" width="0.127" layer="21"/>
+</package>
+<package name="JST-2.5MM-4POS-SOCKET">
+<pad name="1" x="-3.75" y="0" drill="0.9"/>
+<pad name="2" x="-1.25" y="0" drill="0.9"/>
+<pad name="3" x="1.25" y="0" drill="0.9"/>
+<pad name="4" x="3.75" y="0" drill="0.9"/>
+<wire x1="-6.25" y1="3.2" x2="6.25" y2="3.2" width="0.127" layer="21"/>
+<wire x1="6.25" y1="3.2" x2="6.25" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-3.2" x2="-6.25" y2="3.2" width="0.127" layer="21"/>
+<wire x1="-3" y1="-3.25" x2="-3" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="-3" y1="-3.75" x2="-1.25" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="-3.75" x2="-1.25" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-3.25" x2="1.25" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-3.75" x2="3" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="3" y1="-3.75" x2="3" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-5.75" y1="2.75" x2="5.75" y2="2.75" width="0.127" layer="21"/>
+<wire x1="5.75" y1="2.75" x2="5.75" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="-5.75" y1="-2.75" x2="-5.75" y2="2.75" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-3.25" x2="-3" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="-3.25" x2="1.25" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="3" y1="-3.25" x2="6.25" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="5.75" y1="-2.75" x2="2.75" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="2.75" y1="-2.75" x2="2.75" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="2.75" y1="-3.25" x2="1.5" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-3.25" x2="1.5" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-2.75" x2="-1.5" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-2.75" x2="-1.5" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-3.25" x2="-2.75" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="-3.25" x2="-2.75" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="-2.75" x2="-5.75" y2="-2.75" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
-<symbol name="IDC-2*3">
-<pin name="1" x="-10.16" y="2.54" visible="pad" length="middle"/>
-<pin name="2" x="10.16" y="2.54" visible="pad" length="middle" rot="R180"/>
-<pin name="3" x="-10.16" y="0" visible="pad" length="middle"/>
-<pin name="4" x="10.16" y="0" visible="pad" length="middle" rot="R180"/>
-<pin name="5" x="-10.16" y="-2.54" visible="pad" length="middle"/>
-<pin name="6" x="10.16" y="-2.54" visible="pad" length="middle" rot="R180"/>
-<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<text x="-5.08" y="5.334" size="0.8128" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-6.096" size="0.8128" layer="96">&gt;VALUE</text>
+<symbol name="JST-SOCKET-4POS">
+<pin name="P$1" x="-5.08" y="0" length="middle"/>
+<pin name="P$2" x="-5.08" y="2.54" length="middle"/>
+<pin name="P$3" x="-5.08" y="5.08" length="middle"/>
+<pin name="P$4" x="-5.08" y="7.62" length="middle"/>
+<wire x1="-2.54" y1="10.16" x2="2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="IDC2*3" prefix="JP" uservalue="yes">
+<deviceset name="JST-4POS-SOCKET">
 <gates>
-<gate name="G$1" symbol="IDC-2*3" x="0" y="0"/>
+<gate name="G$1" symbol="JST-SOCKET-4POS" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="_2.54MM" package="IDC2X3_2.54MM">
+<device name="2MM" package="JST-2MM-4POS-SOCKET">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2.5MM" package="JST-2.5MM-4POS-SOCKET">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15923,8 +15953,8 @@ Added bigger pads to the TO-92 package</description>
 <part name="C66" library="SparkFun-Capacitors" deviceset="CAP_POL" device="D" value="100uF/35V"/>
 <part name="C74" library="rcl" deviceset="C-EU" device="C0603" value=".33uF"/>
 <part name="C57" library="SparkFun" deviceset="CAP_POL" device="1206" value="10uF"/>
-<part name="JP8" library="Header" deviceset="IDC2*3" device="_2.54MM"/>
-<part name="JP9" library="Header" deviceset="IDC2*3" device="_2.54MM"/>
+<part name="U$3" library="AndySigler_Opentrons" deviceset="JST-4POS-SOCKET" device="2.5MM" value="B04B-XASK-1(LF)(SN)"/>
+<part name="U$4" library="AndySigler_Opentrons" deviceset="JST-4POS-SOCKET" device="2.5MM" value="B04B-XASK-1(LF)(SN)"/>
 </parts>
 <sheets>
 <sheet>
@@ -19467,8 +19497,8 @@ Motor Out</text>
 <instance part="P+20" gate="G$1" x="248.92" y="175.26"/>
 <instance part="JP7" gate="A" x="45.72" y="170.18" rot="R180"/>
 <instance part="JP4" gate="A" x="45.72" y="213.36" rot="R180"/>
-<instance part="JP8" gate="G$1" x="106.68" y="93.98" rot="R180"/>
-<instance part="JP9" gate="G$1" x="106.68" y="68.58" rot="R180"/>
+<instance part="U$3" gate="G$1" x="109.22" y="104.14" rot="R90"/>
+<instance part="U$4" gate="G$1" x="109.22" y="78.74" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -19491,22 +19521,24 @@ Motor Out</text>
 <junction x="137.16" y="50.8"/>
 <pinref part="SUPPLY21" gate="GND" pin="GND"/>
 <junction x="137.16" y="50.8"/>
-<pinref part="JP8" gate="G$1" pin="6"/>
-<wire x1="96.52" y1="96.52" x2="93.98" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="96.52" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="91.44" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="71.12" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="91.44" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="66.04" x2="93.98" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="50.8" x2="137.16" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="JP8" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="91.44" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="JP9" gate="G$1" pin="6"/>
-<wire x1="96.52" y1="71.12" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="JP9" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="66.04" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
 <junction x="93.98" y="66.04"/>
-<junction x="93.98" y="71.12"/>
-<junction x="93.98" y="91.44"/>
+<pinref part="U$4" gate="G$1" pin="P$1"/>
+<wire x1="93.98" y1="66.04" x2="104.14" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="66.04" x2="109.22" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="66.04" x2="109.22" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="P$3"/>
+<wire x1="104.14" y1="73.66" x2="104.14" y2="66.04" width="0.1524" layer="91"/>
+<junction x="104.14" y="66.04"/>
+<pinref part="U$3" gate="G$1" pin="P$3"/>
+<wire x1="93.98" y1="91.44" x2="104.14" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="91.44" x2="104.14" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$1"/>
+<wire x1="104.14" y1="91.44" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="91.44" x2="109.22" y2="99.06" width="0.1524" layer="91"/>
+<junction x="104.14" y="91.44"/>
 </segment>
 <segment>
 <pinref part="SUPPLY52" gate="GND" pin="GND"/>
@@ -20357,33 +20389,37 @@ Motor Out</text>
 <net name="N$12" class="0">
 <segment>
 <pinref part="R99" gate="G$1" pin="1"/>
-<pinref part="JP9" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="60.96" x2="116.84" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="60.96" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="P$4"/>
+<wire x1="121.92" y1="60.96" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="60.96" x2="101.6" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="R97" gate="G$1" pin="1"/>
-<pinref part="JP9" gate="G$1" pin="5"/>
 <wire x1="121.92" y1="73.66" x2="116.84" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="73.66" x2="116.84" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="P$2"/>
+<wire x1="116.84" y1="71.12" x2="106.68" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="71.12" x2="106.68" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
 <pinref part="R95" gate="G$1" pin="1"/>
-<pinref part="JP8" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="86.36" x2="116.84" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="86.36" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$4"/>
+<wire x1="121.92" y1="86.36" x2="101.6" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="86.36" x2="101.6" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$61" class="0">
 <segment>
 <pinref part="R92" gate="G$1" pin="1"/>
-<pinref part="JP8" gate="G$1" pin="5"/>
 <wire x1="121.92" y1="99.06" x2="116.84" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="99.06" x2="116.84" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$2"/>
+<wire x1="116.84" y1="96.52" x2="106.68" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="96.52" x2="106.68" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
