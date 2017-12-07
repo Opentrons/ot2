@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.1">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -15107,7 +15106,6 @@ Source: www.kingbright.com</description>
 <part name="PI-SUPPLY" library="SquantorUsb" deviceset="USB-SHIELD" device="" value="UE27AC54100"/>
 <part name="GND8" library="SparkFun" deviceset="GND" device=""/>
 <part name="C21" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="10uF"/>
-<part name="COMMS" library="pinhead" deviceset="PINHD-2X6" device="" value="5-102619-4"/>
 <part name="R-PI" library="pinhead" deviceset="PINHD-2X8" device="" value="2516-6002-UB"/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="SPEAKER" library="microbuilder" deviceset="TERMBLOCK_1X2" device=""/>
@@ -15131,7 +15129,6 @@ Source: www.kingbright.com</description>
 <part name="IC12" library="adafruit" deviceset="78*" device="DT" technology="05" value="L78M10ABDT-TR"/>
 <part name="C66" library="SparkFun-Capacitors" deviceset="CAP_POL" device="D" value="100uF"/>
 <part name="C74" library="rcl" deviceset="C-EU" device="C0603" value=".33uF"/>
-<part name="COMMS1" library="pinhead" deviceset="PINHD-2X6" device="" value="5-102619-4"/>
 <part name="C1" library="SparkFun" deviceset="CAP_POL" device="G" value="220uF"/>
 <part name="DOOR" library="adafruit" deviceset="JST_2PIN" device="-SMT-RA" value="S2B-PH-SM4-TB(LF)(SN)"/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
@@ -15176,6 +15173,8 @@ Source: www.kingbright.com</description>
 <part name="D2" library="Myint_Lib" deviceset="Z-ENER" device="_SMB" value="B290-13F"/>
 <part name="GND19" library="SparkFun" deviceset="GND" device=""/>
 <part name="R18" library="resistor" deviceset="R-US_" device="R0603" value="100k"/>
+<part name="COMMS2" library="pinhead" deviceset="PINHD-2X6" device="" value="5-102619-4"/>
+<part name="COMMS3" library="pinhead" deviceset="PINHD-2X6" device="" value="5-102619-4"/>
 </parts>
 <sheets>
 <sheet>
@@ -15250,13 +15249,13 @@ Video signal along Sleeve</text>
 <instance part="R66" gate="G$1" x="289.56" y="187.96" rot="R270"/>
 <instance part="R67" gate="G$1" x="304.8" y="187.96" rot="R270"/>
 <instance part="P+12" gate="G$1" x="289.56" y="198.12"/>
-<instance part="Q10" gate="G$1" x="340.36" y="180.34" smashed="yes" rot="R270">
-<attribute name="NAME" x="336.55" y="185.166" size="1.778" layer="95"/>
-<attribute name="VALUE" x="335.026" y="174.752" size="1.778" layer="96"/>
+<instance part="Q10" gate="G$1" x="254" y="213.36" smashed="yes" rot="R270">
+<attribute name="NAME" x="250.19" y="218.186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="248.666" y="207.772" size="1.778" layer="96"/>
 </instance>
-<instance part="R72" gate="G$1" x="332.74" y="187.96" rot="R270"/>
-<instance part="R73" gate="G$1" x="347.98" y="187.96" rot="R270"/>
-<instance part="P+13" gate="G$1" x="332.74" y="198.12"/>
+<instance part="R72" gate="G$1" x="246.38" y="220.98" rot="R270"/>
+<instance part="R73" gate="G$1" x="261.62" y="220.98" rot="R270"/>
+<instance part="P+13" gate="G$1" x="246.38" y="231.14"/>
 <instance part="Q11" gate="G$1" x="297.18" y="213.36" smashed="yes" rot="R270">
 <attribute name="NAME" x="293.37" y="218.186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="291.846" y="207.772" size="1.778" layer="96"/>
@@ -15286,7 +15285,6 @@ Video signal along Sleeve</text>
 <instance part="PI-SUPPLY" gate="1" x="218.44" y="180.34"/>
 <instance part="GND8" gate="1" x="22.86" y="7.62"/>
 <instance part="C21" gate="G$1" x="22.86" y="15.24"/>
-<instance part="COMMS" gate="A" x="30.48" y="68.58"/>
 <instance part="R-PI" gate="A" x="43.18" y="187.96"/>
 <instance part="GND3" gate="1" x="25.4" y="111.76"/>
 <instance part="SPEAKER" gate="G$1" x="342.9" y="60.96" rot="MR180"/>
@@ -15313,7 +15311,6 @@ Video signal along Sleeve</text>
 <instance part="IC12" gate="A1" x="185.42" y="132.08"/>
 <instance part="C66" gate="G$1" x="198.12" y="127"/>
 <instance part="C74" gate="G$1" x="172.72" y="127"/>
-<instance part="COMMS1" gate="A" x="76.2" y="78.74"/>
 <instance part="C1" gate="G$1" x="96.52" y="172.72"/>
 <instance part="DOOR" gate="G$1" x="121.92" y="83.82" rot="R180"/>
 <instance part="GND2" gate="1" x="185.42" y="109.22"/>
@@ -15358,6 +15355,8 @@ Video signal along Sleeve</text>
 <instance part="D2" gate="G$1" x="195.58" y="327.66" rot="R90"/>
 <instance part="GND19" gate="1" x="195.58" y="320.04"/>
 <instance part="R18" gate="G$1" x="106.68" y="330.2" rot="R90"/>
+<instance part="COMMS2" gate="A" x="33.02" y="66.04" rot="R180"/>
+<instance part="COMMS3" gate="A" x="78.74" y="76.2" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -15406,11 +15405,11 @@ Video signal along Sleeve</text>
 <junction x="20.32" y="71.12"/>
 <wire x1="20.32" y1="68.58" x2="20.32" y2="63.5" width="0.1524" layer="91"/>
 <junction x="20.32" y="63.5"/>
-<pinref part="COMMS" gate="A" pin="1"/>
-<pinref part="COMMS" gate="A" pin="3"/>
-<pinref part="COMMS" gate="A" pin="5"/>
-<pinref part="COMMS" gate="A" pin="9"/>
-<pinref part="COMMS" gate="A" pin="11"/>
+<pinref part="COMMS2" gate="A" pin="2"/>
+<pinref part="COMMS2" gate="A" pin="4"/>
+<pinref part="COMMS2" gate="A" pin="8"/>
+<pinref part="COMMS2" gate="A" pin="10"/>
+<pinref part="COMMS2" gate="A" pin="12"/>
 </segment>
 <segment>
 <wire x1="73.66" y1="71.12" x2="66.04" y2="71.12" width="0.1524" layer="91"/>
@@ -15425,10 +15424,10 @@ Video signal along Sleeve</text>
 <wire x1="73.66" y1="78.74" x2="66.04" y2="78.74" width="0.1524" layer="91"/>
 <junction x="66.04" y="78.74"/>
 <pinref part="GND17" gate="1" pin="GND"/>
-<pinref part="COMMS1" gate="A" pin="5"/>
-<pinref part="COMMS1" gate="A" pin="7"/>
-<pinref part="COMMS1" gate="A" pin="9"/>
-<pinref part="COMMS1" gate="A" pin="11"/>
+<pinref part="COMMS3" gate="A" pin="2"/>
+<pinref part="COMMS3" gate="A" pin="4"/>
+<pinref part="COMMS3" gate="A" pin="6"/>
+<pinref part="COMMS3" gate="A" pin="8"/>
 </segment>
 <segment>
 <wire x1="137.16" y1="58.42" x2="137.16" y2="66.04" width="0.1524" layer="91"/>
@@ -15652,7 +15651,7 @@ Video signal along Sleeve</text>
 <segment>
 <wire x1="35.56" y1="66.04" x2="40.64" y2="66.04" width="0.1524" layer="91"/>
 <label x="40.64" y="66.04" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="COMMS" gate="A" pin="8"/>
+<pinref part="COMMS2" gate="A" pin="5"/>
 </segment>
 <segment>
 <wire x1="30.48" y1="127" x2="22.86" y2="127" width="0.1524" layer="91"/>
@@ -15662,34 +15661,34 @@ Video signal along Sleeve</text>
 </net>
 <net name="SMOOTHIE_TX" class="0">
 <segment>
-<wire x1="248.92" y1="180.34" x2="246.38" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="180.34" x2="243.84" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="182.88" x2="246.38" y2="180.34" width="0.1524" layer="91"/>
-<junction x="246.38" y="180.34"/>
-<pinref part="Q8" gate="G$1" pin="S"/>
-<pinref part="R60" gate="G$1" pin="2"/>
-<label x="243.84" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <wire x1="40.64" y1="180.34" x2="33.02" y2="180.34" width="0.1524" layer="91"/>
 <label x="33.02" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R-PI" gate="A" pin="13"/>
 </segment>
+<segment>
+<wire x1="292.1" y1="213.36" x2="289.56" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="213.36" x2="287.02" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="215.9" x2="289.56" y2="213.36" width="0.1524" layer="91"/>
+<junction x="289.56" y="213.36"/>
+<pinref part="Q11" gate="G$1" pin="S"/>
+<pinref part="R74" gate="G$1" pin="2"/>
+<label x="287.02" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SMOOTHIE_RX" class="0">
-<segment>
-<wire x1="292.1" y1="180.34" x2="289.56" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="289.56" y1="180.34" x2="287.02" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="289.56" y1="182.88" x2="289.56" y2="180.34" width="0.1524" layer="91"/>
-<junction x="289.56" y="180.34"/>
-<pinref part="Q9" gate="G$1" pin="S"/>
-<pinref part="R66" gate="G$1" pin="2"/>
-<label x="287.02" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <wire x1="48.26" y1="180.34" x2="55.88" y2="180.34" width="0.1524" layer="91"/>
 <label x="55.88" y="180.34" size="1.27" layer="95" xref="yes"/>
 <pinref part="R-PI" gate="A" pin="14"/>
+</segment>
+<segment>
+<wire x1="248.92" y1="213.36" x2="246.38" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="213.36" x2="243.84" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="215.9" x2="246.38" y2="213.36" width="0.1524" layer="91"/>
+<junction x="246.38" y="213.36"/>
+<pinref part="Q10" gate="G$1" pin="S"/>
+<pinref part="R72" gate="G$1" pin="2"/>
+<label x="243.84" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -15714,11 +15713,11 @@ Video signal along Sleeve</text>
 <pinref part="P+12" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<wire x1="332.74" y1="193.04" x2="332.74" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="332.74" y1="195.58" x2="332.74" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="340.36" y1="187.96" x2="340.36" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="340.36" y1="195.58" x2="332.74" y2="195.58" width="0.1524" layer="91"/>
-<junction x="332.74" y="195.58"/>
+<wire x1="246.38" y1="226.06" x2="246.38" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="228.6" x2="246.38" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="254" y1="220.98" x2="254" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="254" y1="228.6" x2="246.38" y2="228.6" width="0.1524" layer="91"/>
+<junction x="246.38" y="228.6"/>
 <pinref part="R72" gate="G$1" pin="1"/>
 <pinref part="Q10" gate="G$1" pin="G"/>
 <pinref part="P+13" gate="G$1" pin="3.3V"/>
@@ -15837,34 +15836,34 @@ Video signal along Sleeve</text>
 </net>
 <net name="SMOOTHIE_RST" class="0">
 <segment>
-<wire x1="335.28" y1="180.34" x2="332.74" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="332.74" y1="180.34" x2="330.2" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="332.74" y1="182.88" x2="332.74" y2="180.34" width="0.1524" layer="91"/>
-<junction x="332.74" y="180.34"/>
-<pinref part="Q10" gate="G$1" pin="S"/>
-<pinref part="R72" gate="G$1" pin="2"/>
-<label x="330.2" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <wire x1="40.64" y1="185.42" x2="33.02" y2="185.42" width="0.1524" layer="91"/>
 <label x="33.02" y="185.42" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R-PI" gate="A" pin="9"/>
 </segment>
+<segment>
+<wire x1="292.1" y1="180.34" x2="289.56" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="180.34" x2="287.02" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="182.88" x2="289.56" y2="180.34" width="0.1524" layer="91"/>
+<junction x="289.56" y="180.34"/>
+<pinref part="Q9" gate="G$1" pin="S"/>
+<pinref part="R66" gate="G$1" pin="2"/>
+<label x="287.02" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SMOOTHIE_ISP" class="0">
-<segment>
-<wire x1="292.1" y1="213.36" x2="289.56" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="289.56" y1="213.36" x2="287.02" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="289.56" y1="215.9" x2="289.56" y2="213.36" width="0.1524" layer="91"/>
-<junction x="289.56" y="213.36"/>
-<pinref part="Q11" gate="G$1" pin="S"/>
-<pinref part="R74" gate="G$1" pin="2"/>
-<label x="287.02" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <wire x1="48.26" y1="185.42" x2="55.88" y2="185.42" width="0.1524" layer="91"/>
 <label x="55.88" y="185.42" size="1.27" layer="95" xref="yes"/>
 <pinref part="R-PI" gate="A" pin="10"/>
+</segment>
+<segment>
+<wire x1="248.92" y1="180.34" x2="246.38" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="180.34" x2="243.84" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="182.88" x2="246.38" y2="180.34" width="0.1524" layer="91"/>
+<junction x="246.38" y="180.34"/>
+<pinref part="Q8" gate="G$1" pin="S"/>
+<pinref part="R60" gate="G$1" pin="2"/>
+<label x="243.84" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SMOOTHIE_KILL" class="0">
@@ -15885,53 +15884,10 @@ Video signal along Sleeve</text>
 </net>
 <net name="SMOOTHIE_TX_12V" class="0">
 <segment>
-<wire x1="259.08" y1="180.34" x2="261.62" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="180.34" x2="264.16" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="182.88" x2="261.62" y2="180.34" width="0.1524" layer="91"/>
-<junction x="261.62" y="180.34"/>
-<pinref part="Q8" gate="G$1" pin="D"/>
-<pinref part="R62" gate="G$1" pin="2"/>
-<label x="264.16" y="177.8" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <wire x1="35.56" y1="63.5" x2="40.64" y2="63.5" width="0.1524" layer="91"/>
 <label x="40.64" y="63.5" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="COMMS" gate="A" pin="10"/>
+<pinref part="COMMS2" gate="A" pin="3"/>
 </segment>
-</net>
-<net name="SMOOTHIE_RX_12V" class="0">
-<segment>
-<wire x1="302.26" y1="180.34" x2="304.8" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="180.34" x2="307.34" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="182.88" x2="304.8" y2="180.34" width="0.1524" layer="91"/>
-<junction x="304.8" y="180.34"/>
-<pinref part="Q9" gate="G$1" pin="D"/>
-<pinref part="R67" gate="G$1" pin="2"/>
-<label x="307.34" y="177.8" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="35.56" y1="60.96" x2="40.64" y2="60.96" width="0.1524" layer="91"/>
-<label x="40.64" y="60.96" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="COMMS" gate="A" pin="12"/>
-</segment>
-</net>
-<net name="SMOOTHIE_RST_12V" class="0">
-<segment>
-<wire x1="345.44" y1="180.34" x2="347.98" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="347.98" y1="180.34" x2="350.52" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="347.98" y1="182.88" x2="347.98" y2="180.34" width="0.1524" layer="91"/>
-<junction x="347.98" y="180.34"/>
-<pinref part="Q10" gate="G$1" pin="D"/>
-<pinref part="R73" gate="G$1" pin="2"/>
-<label x="350.52" y="177.8" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="35.56" y1="73.66" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
-<label x="40.64" y="73.66" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="COMMS" gate="A" pin="2"/>
-</segment>
-</net>
-<net name="SMOOTHIE_ISP_12V" class="0">
 <segment>
 <wire x1="302.26" y1="213.36" x2="304.8" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="213.36" x2="307.34" y2="210.82" width="0.1524" layer="91"/>
@@ -15941,10 +15897,53 @@ Video signal along Sleeve</text>
 <pinref part="R75" gate="G$1" pin="2"/>
 <label x="307.34" y="210.82" size="1.27" layer="95" xref="yes"/>
 </segment>
+</net>
+<net name="SMOOTHIE_RX_12V" class="0">
+<segment>
+<wire x1="35.56" y1="60.96" x2="40.64" y2="60.96" width="0.1524" layer="91"/>
+<label x="40.64" y="60.96" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="COMMS2" gate="A" pin="1"/>
+</segment>
+<segment>
+<wire x1="259.08" y1="213.36" x2="261.62" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="213.36" x2="264.16" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="215.9" x2="261.62" y2="213.36" width="0.1524" layer="91"/>
+<junction x="261.62" y="213.36"/>
+<pinref part="Q10" gate="G$1" pin="D"/>
+<pinref part="R73" gate="G$1" pin="2"/>
+<label x="264.16" y="210.82" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SMOOTHIE_RST_12V" class="0">
+<segment>
+<wire x1="35.56" y1="73.66" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
+<label x="40.64" y="73.66" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="COMMS2" gate="A" pin="11"/>
+</segment>
+<segment>
+<wire x1="302.26" y1="180.34" x2="304.8" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="180.34" x2="307.34" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="182.88" x2="304.8" y2="180.34" width="0.1524" layer="91"/>
+<junction x="304.8" y="180.34"/>
+<pinref part="Q9" gate="G$1" pin="D"/>
+<pinref part="R67" gate="G$1" pin="2"/>
+<label x="307.34" y="177.8" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SMOOTHIE_ISP_12V" class="0">
 <segment>
 <wire x1="35.56" y1="71.12" x2="40.64" y2="71.12" width="0.1524" layer="91"/>
 <label x="40.64" y="71.12" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="COMMS" gate="A" pin="4"/>
+<pinref part="COMMS2" gate="A" pin="9"/>
+</segment>
+<segment>
+<wire x1="259.08" y1="180.34" x2="261.62" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="180.34" x2="264.16" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="182.88" x2="261.62" y2="180.34" width="0.1524" layer="91"/>
+<junction x="261.62" y="180.34"/>
+<pinref part="Q8" gate="G$1" pin="D"/>
+<pinref part="R62" gate="G$1" pin="2"/>
+<label x="264.16" y="177.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SMOOTHIE_KILL_12V" class="0">
@@ -15960,7 +15959,7 @@ Video signal along Sleeve</text>
 <segment>
 <wire x1="35.56" y1="68.58" x2="40.64" y2="68.58" width="0.1524" layer="91"/>
 <label x="40.64" y="68.58" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="COMMS" gate="A" pin="6"/>
+<pinref part="COMMS2" gate="A" pin="7"/>
 </segment>
 </net>
 <net name="36V" class="0">
@@ -15993,10 +15992,10 @@ Video signal along Sleeve</text>
 <wire x1="81.28" y1="78.74" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="78.74" x2="88.9" y2="76.2" width="0.1524" layer="91"/>
 <junction x="88.9" y="76.2"/>
-<pinref part="COMMS1" gate="A" pin="6"/>
-<pinref part="COMMS1" gate="A" pin="8"/>
-<pinref part="COMMS1" gate="A" pin="10"/>
-<pinref part="COMMS1" gate="A" pin="12"/>
+<pinref part="COMMS3" gate="A" pin="1"/>
+<pinref part="COMMS3" gate="A" pin="3"/>
+<pinref part="COMMS3" gate="A" pin="5"/>
+<pinref part="COMMS3" gate="A" pin="7"/>
 </segment>
 <segment>
 <label x="106.68" y="139.7" size="1.778" layer="95" ratio="17" xref="yes"/>
@@ -16171,7 +16170,7 @@ Video signal along Sleeve</text>
 <segment>
 <wire x1="27.94" y1="66.04" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
 <label x="25.4" y="66.04" size="1.778" layer="95" ratio="17" rot="R180" xref="yes"/>
-<pinref part="COMMS" gate="A" pin="7"/>
+<pinref part="COMMS2" gate="A" pin="6"/>
 </segment>
 </net>
 <net name="AUDIO_ENABLE" class="0">
@@ -16334,9 +16333,9 @@ Video signal along Sleeve</text>
 <label x="304.8" y="198.12" size="1.4224" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="347.98" y1="193.04" x2="347.98" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="226.06" x2="261.62" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="R73" gate="G$1" pin="1"/>
-<label x="347.98" y="198.12" size="1.4224" layer="95" xref="yes"/>
+<label x="261.62" y="231.14" size="1.4224" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="347.98" y1="226.06" x2="347.98" y2="231.14" width="0.1524" layer="91"/>
@@ -16392,9 +16391,9 @@ Video signal along Sleeve</text>
 </net>
 <net name="Y_MOTOR_2B" class="0">
 <segment>
-<pinref part="COMMS1" gate="A" pin="4"/>
 <wire x1="81.28" y1="81.28" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
 <label x="86.36" y="81.28" size="1.27" layer="95" xref="yes"/>
+<pinref part="COMMS3" gate="A" pin="9"/>
 </segment>
 <segment>
 <wire x1="208.28" y1="66.04" x2="200.66" y2="66.04" width="0.1524" layer="91"/>
@@ -16404,9 +16403,9 @@ Video signal along Sleeve</text>
 </net>
 <net name="Y_MOTOR_1A" class="0">
 <segment>
-<pinref part="COMMS1" gate="A" pin="2"/>
 <wire x1="81.28" y1="83.82" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
 <label x="86.36" y="83.82" size="1.27" layer="95" xref="yes"/>
+<pinref part="COMMS3" gate="A" pin="11"/>
 </segment>
 <segment>
 <wire x1="208.28" y1="60.96" x2="200.66" y2="60.96" width="0.1524" layer="91"/>
@@ -16416,9 +16415,9 @@ Video signal along Sleeve</text>
 </net>
 <net name="Y_MOTOR_1B" class="0">
 <segment>
-<pinref part="COMMS1" gate="A" pin="1"/>
 <wire x1="73.66" y1="83.82" x2="68.58" y2="83.82" width="0.1524" layer="91"/>
 <label x="68.58" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="COMMS3" gate="A" pin="12"/>
 </segment>
 <segment>
 <wire x1="208.28" y1="53.34" x2="200.66" y2="53.34" width="0.1524" layer="91"/>
@@ -16428,9 +16427,9 @@ Video signal along Sleeve</text>
 </net>
 <net name="Y_MOTOR_2A" class="0">
 <segment>
-<pinref part="COMMS1" gate="A" pin="3"/>
 <wire x1="73.66" y1="81.28" x2="68.58" y2="81.28" width="0.1524" layer="91"/>
 <label x="68.58" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="COMMS3" gate="A" pin="10"/>
 </segment>
 <segment>
 <wire x1="208.28" y1="58.42" x2="200.66" y2="58.42" width="0.1524" layer="91"/>
