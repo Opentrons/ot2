@@ -2678,7 +2678,9 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="8.46" y="11.22" size="1.27" layer="28" font="vector" rot="MR180"/>
 <attribute name="HEIGHT" value="7" x="11" y="3.6" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="U$1" library="AndySigler_Opentrons" package="JST-2.5MM-2POS-SOCKET" value="JST-2POS-SOCKET" x="11" y="24.116" rot="MR180"/>
+<element name="U$1" library="AndySigler_Opentrons" package="JST-2.5MM-2POS-SOCKET" value="JST-2POS-SOCKET" x="11" y="24.116" rot="MR180">
+<attribute name="HEIGHT" value="8" x="11" y="24.116" size="1.778" layer="28" rot="MR180" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
