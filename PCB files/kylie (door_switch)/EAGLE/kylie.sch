@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -466,7 +466,7 @@ JST PH 2-pin thru-home side entry</description>
 </classes>
 <parts>
 <part name="FRAME2" library="microbuilder" deviceset="FRAME_A3" device=""/>
-<part name="U$1" library="Andy_Sigler" deviceset="SWITCH-DOUBLE" device="" value="GPBS-800N"/>
+<part name="U$1" library="Andy_Sigler" deviceset="SWITCH-DOUBLE" device="" value="GPBS-800N（No Lock)"/>
 <part name="CN1" library="adafruit" deviceset="JST_2PIN" device="-THM-RA"/>
 </parts>
 <sheets>

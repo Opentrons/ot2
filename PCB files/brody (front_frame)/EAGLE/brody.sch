@@ -867,6 +867,58 @@ JST PH 2-pin thru-home side entry</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="AndySigler_Opentrons">
+<packages>
+<package name="JST-2.5MM-2POS-SOCKET">
+<pad name="1" x="-1.25" y="0" drill="0.9"/>
+<pad name="2" x="1.25" y="0" drill="0.9"/>
+<wire x1="-3.75" y1="3.2" x2="3.75" y2="3.2" width="0.127" layer="21"/>
+<wire x1="3.75" y1="3.2" x2="3.75" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="-3.25" x2="-3.75" y2="3.2" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-3.25" x2="-0.85" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-3.75" x2="0.9" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="0.9" y1="-3.75" x2="0.9" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-3.25" y1="2.75" x2="3.25" y2="2.75" width="0.127" layer="21"/>
+<wire x1="3.25" y1="2.75" x2="3.25" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="-3.25" y1="-2.75" x2="-3.25" y2="2.75" width="0.127" layer="21"/>
+<wire x1="0.9" y1="-3.25" x2="3.75" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="3.25" y1="-2.75" x2="0.65" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="0.65" y1="-2.75" x2="0.65" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="0.65" y1="-3.25" x2="-0.6" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="-3.25" x2="-0.6" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="-2.75" x2="-3.25" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-3.25" x2="-3.75" y2="-3.25" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="JST-SOCKET-2POS">
+<pin name="P$1" x="-5.08" y="2.54" length="middle"/>
+<pin name="P$2" x="-5.08" y="-2.54" length="middle"/>
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JST-2POS-SOCKET">
+<gates>
+<gate name="G$1" symbol="JST-SOCKET-2POS" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="JST-2.5MM-2POS-SOCKET">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -883,12 +935,15 @@ JST PH 2-pin thru-home side entry</description>
 <part name="RIBBON" library="adafruit" deviceset="PINHD-2X4" device="" value="75869-132LF"/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="DOOR" library="adafruit" deviceset="JST_2PIN" device="-SMT-RA"/>
+<part name="U$1" library="AndySigler_Opentrons" deviceset="JST-2POS-SOCKET" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <rectangle x1="342.9" y1="4.318" x2="383.286" y2="8.128" layer="210"/>
 <text x="200.66" y="157.48" size="3.81" layer="94">Front-Frame</text>
+<text x="226.06" y="195.58" size="2.1844" layer="91">both are normal CLOSED</text>
+<text x="203.2" y="208.28" size="2.1844" layer="91">RED nub switch</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
@@ -902,6 +957,7 @@ JST PH 2-pin thru-home side entry</description>
 <instance part="RIBBON" gate="A" x="236.22" y="139.7" rot="R180"/>
 <instance part="GND4" gate="1" x="233.68" y="124.46"/>
 <instance part="DOOR" gate="G$1" x="231.14" y="182.88"/>
+<instance part="U$1" gate="G$1" x="218.44" y="200.66"/>
 </instances>
 <busses>
 </busses>
@@ -984,14 +1040,19 @@ JST PH 2-pin thru-home side entry</description>
 </net>
 <net name="WINDOW_SWITCH_NEG" class="0">
 <segment>
-<pinref part="DOOR" gate="G$1" pin="1"/>
-<wire x1="228.6" y1="185.42" x2="218.44" y2="185.42" width="0.1524" layer="91"/>
-<label x="218.44" y="185.42" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="RIBBON" gate="A" pin="1"/>
 <wire x1="238.76" y1="134.62" x2="248.92" y2="134.62" width="0.1524" layer="91"/>
 <label x="248.92" y="134.62" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="213.36" y1="203.2" x2="203.2" y2="203.2" width="0.1524" layer="91"/>
+<label x="203.2" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="P$1"/>
+</segment>
+<segment>
+<pinref part="DOOR" gate="G$1" pin="1"/>
+<wire x1="228.6" y1="185.42" x2="218.44" y2="185.42" width="0.1524" layer="91"/>
+<label x="218.44" y="185.42" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="WINDOW_SWITCH_POS" class="0">
@@ -1004,6 +1065,11 @@ JST PH 2-pin thru-home side entry</description>
 <pinref part="RIBBON" gate="A" pin="2"/>
 <wire x1="231.14" y1="134.62" x2="220.98" y2="134.62" width="0.1524" layer="91"/>
 <label x="220.98" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$2"/>
+<wire x1="213.36" y1="198.12" x2="203.2" y2="198.12" width="0.1524" layer="91"/>
+<label x="203.2" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>

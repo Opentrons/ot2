@@ -1822,6 +1822,14 @@ wave soldering</description>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 <wire x1="231.14" y1="121.92" x2="228.6" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="121.92" x2="228.6" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="A1"/>
+<wire x1="231.14" y1="134.62" x2="228.6" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="134.62" x2="228.6" y2="132.08" width="0.1524" layer="91"/>
+<junction x="228.6" y="121.92"/>
+<pinref part="U1" gate="A" pin="A2"/>
+<wire x1="228.6" y1="132.08" x2="228.6" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="132.08" x2="228.6" y2="132.08" width="0.1524" layer="91"/>
+<junction x="228.6" y="132.08"/>
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
@@ -1924,18 +1932,9 @@ wave soldering</description>
 <junction x="114.3" y="116.84"/>
 </segment>
 <segment>
-<wire x1="231.14" y1="142.24" x2="228.6" y2="142.24" width="0.1524" layer="91"/>
 <label x="223.52" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U1" gate="A" pin="VCC"/>
-<pinref part="U1" gate="A" pin="A0"/>
-<wire x1="228.6" y1="142.24" x2="223.52" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="137.16" x2="228.6" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="137.16" x2="228.6" y2="142.24" width="0.1524" layer="91"/>
-<junction x="228.6" y="142.24"/>
-<pinref part="U1" gate="A" pin="A1"/>
-<wire x1="231.14" y1="134.62" x2="228.6" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="134.62" x2="228.6" y2="137.16" width="0.1524" layer="91"/>
-<junction x="228.6" y="137.16"/>
+<wire x1="231.14" y1="142.24" x2="223.52" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -1974,14 +1973,14 @@ wave soldering</description>
 </net>
 <net name="ADDRESS" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="A2"/>
-<wire x1="231.14" y1="132.08" x2="223.52" y2="132.08" width="0.1524" layer="91"/>
-<label x="223.52" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="A" pin="3"/>
 <wire x1="139.7" y1="172.72" x2="152.4" y2="172.72" width="0.1524" layer="91"/>
 <label x="152.4" y="172.72" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="A0"/>
+<wire x1="223.52" y1="137.16" x2="231.14" y2="137.16" width="0.1524" layer="91"/>
+<label x="223.52" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">

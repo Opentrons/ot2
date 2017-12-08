@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -460,54 +460,49 @@ by exp-project-lbr.ulp</description>
 <library name="AndySigler_Opentrons">
 <packages>
 <package name="KPJX-4S-S">
-<pad name="1" x="-2.9" y="-14.65" drill="1.1" diameter="1.6" shape="long" rot="R90"/>
-<wire x1="-2.9" y1="-13.3" x2="-2.6" y2="-13.6" width="0.01" layer="21" curve="-90"/>
-<wire x1="-2.6" y1="-13.6" x2="-2.6" y2="-15.7" width="0.01" layer="21"/>
-<wire x1="-2.6" y1="-15.7" x2="-2.9" y2="-16" width="0.01" layer="21" curve="-90"/>
-<wire x1="-2.9" y1="-16" x2="-3.2" y2="-15.7" width="0.01" layer="21" curve="-90"/>
-<wire x1="-3.2" y1="-15.7" x2="-3.2" y2="-13.6" width="0.01" layer="21"/>
-<wire x1="-3.2" y1="-13.6" x2="-2.9" y2="-13.3" width="0.01" layer="21" curve="-90"/>
-<pad name="S1" x="-7.8" y="-16" drill="1.1" diameter="1.6" shape="long" rot="R90"/>
-<wire x1="-7.8" y1="-14.65" x2="-7.5" y2="-14.95" width="0.01" layer="21" curve="-90"/>
-<wire x1="-7.5" y1="-14.95" x2="-7.5" y2="-17.05" width="0.01" layer="21"/>
-<wire x1="-7.5" y1="-17.05" x2="-7.8" y2="-17.35" width="0.01" layer="21" curve="-90"/>
-<wire x1="-7.8" y1="-17.35" x2="-8.1" y2="-17.05" width="0.01" layer="21" curve="-90"/>
-<wire x1="-8.1" y1="-17.05" x2="-8.1" y2="-14.95" width="0.01" layer="21"/>
-<wire x1="-8.1" y1="-14.95" x2="-7.8" y2="-14.65" width="0.01" layer="21" curve="-90"/>
-<pad name="S2" x="7.8" y="-16" drill="1.1" diameter="1.6" shape="long" rot="R90"/>
-<wire x1="7.8" y1="-14.65" x2="8.1" y2="-14.95" width="0.01" layer="21" curve="-90"/>
-<wire x1="8.1" y1="-14.95" x2="8.1" y2="-17.05" width="0.01" layer="21"/>
-<wire x1="8.1" y1="-17.05" x2="7.8" y2="-17.35" width="0.01" layer="21" curve="-90"/>
-<wire x1="7.8" y1="-17.35" x2="7.5" y2="-17.05" width="0.01" layer="21" curve="-90"/>
-<wire x1="7.5" y1="-17.05" x2="7.5" y2="-14.95" width="0.01" layer="21"/>
-<wire x1="7.5" y1="-14.95" x2="7.8" y2="-14.65" width="0.01" layer="21" curve="-90"/>
-<pad name="2" x="2.9" y="-14.65" drill="1.1" diameter="1.6" shape="long" rot="R90"/>
-<wire x1="2.9" y1="-13.3" x2="3.2" y2="-13.6" width="0.01" layer="21" curve="-90"/>
-<wire x1="3.2" y1="-13.6" x2="3.2" y2="-15.7" width="0.01" layer="21"/>
-<wire x1="3.2" y1="-15.7" x2="2.9" y2="-16" width="0.01" layer="21" curve="-90"/>
-<wire x1="2.9" y1="-16" x2="2.6" y2="-15.7" width="0.01" layer="21" curve="-90"/>
-<wire x1="2.6" y1="-15.7" x2="2.6" y2="-13.6" width="0.01" layer="21"/>
-<wire x1="2.6" y1="-13.6" x2="2.9" y2="-13.3" width="0.01" layer="21" curve="-90"/>
-<pad name="3" x="-2.5" y="-11" drill="1.1" diameter="1.6" shape="long" rot="R90"/>
-<wire x1="-2.5" y1="-9.65" x2="-2.2" y2="-9.95" width="0.01" layer="21" curve="-90"/>
-<wire x1="-2.2" y1="-9.95" x2="-2.2" y2="-12.05" width="0.01" layer="21"/>
-<wire x1="-2.2" y1="-12.05" x2="-2.5" y2="-12.35" width="0.01" layer="21" curve="-90"/>
-<wire x1="-2.5" y1="-12.35" x2="-2.8" y2="-12.05" width="0.01" layer="21" curve="-90"/>
-<wire x1="-2.8" y1="-12.05" x2="-2.8" y2="-9.95" width="0.01" layer="21"/>
-<wire x1="-2.8" y1="-9.95" x2="-2.5" y2="-9.65" width="0.01" layer="21" curve="-90"/>
-<pad name="4" x="2.5" y="-11" drill="1.1" diameter="1.6" shape="long" rot="R90"/>
-<wire x1="2.5" y1="-9.65" x2="2.8" y2="-9.95" width="0.01" layer="21" curve="-90"/>
-<wire x1="2.8" y1="-9.95" x2="2.8" y2="-12.05" width="0.01" layer="21"/>
-<wire x1="2.8" y1="-12.05" x2="2.9" y2="-12.35" width="0.01" layer="21" curve="-90"/>
-<wire x1="2.9" y1="-12.35" x2="2.2" y2="-12.05" width="0.01" layer="21" curve="-90"/>
-<wire x1="2.2" y1="-12.05" x2="2.2" y2="-9.95" width="0.01" layer="21"/>
-<wire x1="2.2" y1="-9.95" x2="2.5" y2="-9.65" width="0.01" layer="21" curve="-90"/>
-<wire x1="-0.6" y1="-5" x2="0.6" y2="-5" width="0.01" layer="21"/>
-<wire x1="1.1" y1="-5.5" x2="0.6" y2="-6" width="0.01" layer="21" curve="-90"/>
-<wire x1="0.6" y1="-6" x2="-0.6" y2="-6" width="0.01" layer="21"/>
-<wire x1="-0.6" y1="-6" x2="-1.1" y2="-5.5" width="0.01" layer="21" curve="-90"/>
-<wire x1="-1.1" y1="-5.5" x2="-0.6" y2="-5" width="0.01" layer="21" curve="-90"/>
-<wire x1="0.6" y1="-5" x2="1.1" y2="-5.5" width="0.01" layer="21" curve="-90"/>
+<circle x="0" y="-9" radius="1.5" width="0" layer="21"/>
+<wire x1="-2.9" y1="-13.3" x2="-2.6" y2="-13.6" width="0.01" layer="20" curve="-90"/>
+<wire x1="-2.6" y1="-13.6" x2="-2.6" y2="-15.7" width="0.01" layer="20"/>
+<wire x1="-2.6" y1="-15.7" x2="-2.9" y2="-16" width="0.01" layer="20" curve="-90"/>
+<wire x1="-2.9" y1="-16" x2="-3.2" y2="-15.7" width="0.01" layer="20" curve="-90"/>
+<wire x1="-3.2" y1="-15.7" x2="-3.2" y2="-13.6" width="0.01" layer="20"/>
+<wire x1="-3.2" y1="-13.6" x2="-2.9" y2="-13.3" width="0.01" layer="20" curve="-90"/>
+<wire x1="-7.8" y1="-14.65" x2="-7.5" y2="-14.95" width="0.01" layer="20" curve="-90"/>
+<wire x1="-7.5" y1="-14.95" x2="-7.5" y2="-17.05" width="0.01" layer="20"/>
+<wire x1="-7.5" y1="-17.05" x2="-7.8" y2="-17.35" width="0.01" layer="20" curve="-90"/>
+<wire x1="-7.8" y1="-17.35" x2="-8.1" y2="-17.05" width="0.01" layer="20" curve="-90"/>
+<wire x1="-8.1" y1="-17.05" x2="-8.1" y2="-14.95" width="0.01" layer="20"/>
+<wire x1="-8.1" y1="-14.95" x2="-7.8" y2="-14.65" width="0.01" layer="20" curve="-90"/>
+<wire x1="7.8" y1="-14.65" x2="8.1" y2="-14.95" width="0.01" layer="20" curve="-90"/>
+<wire x1="8.1" y1="-14.95" x2="8.1" y2="-17.05" width="0.01" layer="20"/>
+<wire x1="8.1" y1="-17.05" x2="7.8" y2="-17.35" width="0.01" layer="20" curve="-90"/>
+<wire x1="7.8" y1="-17.35" x2="7.5" y2="-17.05" width="0.01" layer="20" curve="-90"/>
+<wire x1="7.5" y1="-17.05" x2="7.5" y2="-14.95" width="0.01" layer="20"/>
+<wire x1="7.5" y1="-14.95" x2="7.8" y2="-14.65" width="0.01" layer="20" curve="-90"/>
+<wire x1="2.9" y1="-13.3" x2="3.2" y2="-13.6" width="0.01" layer="20" curve="-90"/>
+<wire x1="3.2" y1="-13.6" x2="3.2" y2="-15.7" width="0.01" layer="20"/>
+<wire x1="3.2" y1="-15.7" x2="2.9" y2="-16" width="0.01" layer="20" curve="-90"/>
+<wire x1="2.9" y1="-16" x2="2.6" y2="-15.7" width="0.01" layer="20" curve="-90"/>
+<wire x1="2.6" y1="-15.7" x2="2.6" y2="-13.6" width="0.01" layer="20"/>
+<wire x1="2.6" y1="-13.6" x2="2.9" y2="-13.3" width="0.01" layer="20" curve="-90"/>
+<wire x1="-2.5" y1="-9.65" x2="-2.2" y2="-9.95" width="0.01" layer="20" curve="-90"/>
+<wire x1="-2.2" y1="-9.95" x2="-2.2" y2="-12.05" width="0.01" layer="20"/>
+<wire x1="-2.2" y1="-12.05" x2="-2.5" y2="-12.35" width="0.01" layer="20" curve="-90"/>
+<wire x1="-2.5" y1="-12.35" x2="-2.8" y2="-12.05" width="0.01" layer="20" curve="-90"/>
+<wire x1="-2.8" y1="-12.05" x2="-2.8" y2="-9.95" width="0.01" layer="20"/>
+<wire x1="-2.8" y1="-9.95" x2="-2.5" y2="-9.65" width="0.01" layer="20" curve="-90"/>
+<wire x1="2.5" y1="-9.65" x2="2.8" y2="-9.95" width="0.01" layer="20" curve="-90"/>
+<wire x1="2.8" y1="-9.95" x2="2.8" y2="-12.05" width="0.01" layer="20"/>
+<wire x1="2.8" y1="-12.05" x2="2.5" y2="-12.35" width="0.01" layer="20" curve="-90"/>
+<wire x1="2.5" y1="-12.35" x2="2.2" y2="-12.05" width="0.01" layer="20" curve="-90"/>
+<wire x1="2.2" y1="-12.05" x2="2.2" y2="-9.95" width="0.01" layer="20"/>
+<wire x1="2.2" y1="-9.95" x2="2.5" y2="-9.65" width="0.01" layer="20" curve="-90"/>
+<wire x1="-0.6" y1="-5" x2="0.6" y2="-5" width="0.01" layer="20"/>
+<wire x1="1.1" y1="-5.5" x2="0.6" y2="-6" width="0.01" layer="20" curve="-90"/>
+<wire x1="0.6" y1="-6" x2="-0.6" y2="-6" width="0.01" layer="20"/>
+<wire x1="-0.6" y1="-6" x2="-1.1" y2="-5.5" width="0.01" layer="20" curve="-90"/>
+<wire x1="-1.1" y1="-5.5" x2="-0.6" y2="-5" width="0.01" layer="20" curve="-90"/>
+<wire x1="0.6" y1="-5" x2="1.1" y2="-5.5" width="0.01" layer="20" curve="-90"/>
 <wire x1="-6.45" y1="0" x2="6.45" y2="0" width="0.4064" layer="21"/>
 <wire x1="-6.45" y1="0" x2="-6.45" y2="-4" width="0.4064" layer="21"/>
 <wire x1="-6.45" y1="-4" x2="6.45" y2="-4" width="0.01" layer="21"/>
@@ -516,57 +511,62 @@ by exp-project-lbr.ulp</description>
 <wire x1="8" y1="-4" x2="8" y2="-17.4" width="0.4064" layer="21"/>
 <wire x1="8" y1="-17.4" x2="-8" y2="-17.4" width="0.4064" layer="21"/>
 <wire x1="-8" y1="-17.4" x2="-8" y2="-4" width="0.4064" layer="21"/>
-<text x="-5.74" y="-3.38" size="0.5588" layer="48">15mm highest point.
-
-Protruding circle is 12.9mm diameter,
-center of it is 7.1mm above PCB top</text>
-<circle x="0" y="-9" radius="1.5" width="0" layer="21"/>
+<pad name="1" x="-2.9" y="-14.65" drill="1.1" diameter="1.6" shape="long" rot="R90"/>
+<pad name="2" x="2.9" y="-14.65" drill="1.1" diameter="1.6" shape="long" rot="R90"/>
+<pad name="3" x="-2.5" y="-11" drill="1.1" diameter="1.6" shape="long" rot="R90"/>
+<pad name="4" x="2.5" y="-11" drill="1.1" diameter="1.6" shape="long" rot="R90"/>
 <pad name="P$1" x="-2.5" y="-7.5" drill="1.7"/>
 <pad name="P$2" x="2.5" y="-7.5" drill="1.7"/>
 <pad name="P$3" x="7.8" y="-7.8" drill="2.2"/>
 <pad name="P$4" x="-7.8" y="-7.8" drill="2.2"/>
+<pad name="S1" x="-7.8" y="-16" drill="1.1" diameter="1.6" shape="long" rot="R90"/>
+<pad name="S2" x="7.8" y="-16" drill="1.1" diameter="1.6" shape="long" rot="R90"/>
+<text x="-5.74" y="-3.38" size="0.5588" layer="48">center of it is 7.1mm above PCB top'</text>
 </package>
-<package name="TERMINAL-BLOCK-90DEG-5MM">
-<pad name="P$1" x="-2.5" y="0" drill="1.6" shape="long" rot="R90"/>
-<pad name="P$2" x="2.5" y="0" drill="1.6" shape="long" rot="R90"/>
-<wire x1="-6" y1="-2" x2="-6" y2="8" width="0.127" layer="21"/>
-<wire x1="-6" y1="8" x2="-6" y2="10" width="0.127" layer="21"/>
-<wire x1="6" y1="-2" x2="6" y2="8" width="0.127" layer="21"/>
-<wire x1="6" y1="8" x2="6" y2="10" width="0.127" layer="21"/>
-<wire x1="-6" y1="-2" x2="6" y2="-2" width="0.127" layer="21"/>
-<wire x1="-6" y1="10" x2="-2.5" y2="10" width="0.127" layer="21"/>
-<wire x1="-1" y1="10" x2="1" y2="10" width="0.127" layer="21"/>
-<wire x1="2.5" y1="10" x2="6" y2="10" width="0.127" layer="21"/>
-<wire x1="-6" y1="8" x2="6" y2="8" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="10" x2="-2.5" y2="9.75" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="9.75" x2="-1.75" y2="9" width="0.127" layer="21" curve="90"/>
-<wire x1="-1.75" y1="9" x2="-1" y2="9.75" width="0.127" layer="21" curve="90"/>
-<wire x1="-1" y1="9.75" x2="-1" y2="10" width="0.127" layer="21"/>
-<wire x1="1.75" y1="9" x2="2.5" y2="9.75" width="0.127" layer="21" curve="90"/>
-<wire x1="1" y1="9.75" x2="1.75" y2="9" width="0.127" layer="21" curve="90"/>
-<wire x1="1" y1="9.75" x2="1" y2="10" width="0.127" layer="21"/>
-<wire x1="2.5" y1="9.75" x2="2.5" y2="10" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="10" x2="-1" y2="10" width="0.127" layer="21"/>
-<wire x1="1" y1="10" x2="2.5" y2="10" width="0.127" layer="21"/>
+<package name="DC-POWER-4POS-0050361768">
+<wire x1="-4.8" y1="-16.15" x2="4.8" y2="-16.15" width="0.127" layer="21"/>
+<wire x1="-4.8" y1="-3.35" x2="4.8" y2="-3.35" width="0.127" layer="21"/>
+<wire x1="-4.8" y1="-3.35" x2="-4.8" y2="-16.15" width="0.127" layer="21"/>
+<wire x1="4.8" y1="-3.35" x2="4.8" y2="-16.15" width="0.127" layer="21"/>
+<wire x1="-1" y1="-13" x2="1" y2="-13" width="0.127" layer="21"/>
+<wire x1="1" y1="-13" x2="1" y2="-14" width="0.127" layer="21"/>
+<wire x1="1" y1="-14" x2="1" y2="-16" width="0.127" layer="21"/>
+<wire x1="-1" y1="-13" x2="-1" y2="-14" width="0.127" layer="21"/>
+<wire x1="-1" y1="-14" x2="-1" y2="-16" width="0.127" layer="21"/>
+<wire x1="-1" y1="-14" x2="1" y2="-14" width="0.127" layer="21"/>
+<wire x1="-4.8" y1="-26.85" x2="4.8" y2="-26.85" width="0.127" layer="21"/>
+<wire x1="-4.8" y1="-16.15" x2="-4.8" y2="-26.85" width="0.127" layer="21"/>
+<wire x1="4.8" y1="-16.15" x2="4.8" y2="-26.85" width="0.127" layer="21"/>
+<wire x1="-2" y1="-12" x2="-2" y2="-23" width="0.127" layer="21"/>
+<wire x1="-2" y1="-23" x2="2" y2="-23" width="0.127" layer="21"/>
+<wire x1="2" y1="-23" x2="2" y2="-12" width="0.127" layer="21"/>
+<wire x1="2" y1="-12" x2="-2" y2="-12" width="0.127" layer="21"/>
+<pad name="1" x="2.1" y="-2.25" drill="1.8" shape="octagon"/>
+<pad name="2" x="-2.1" y="-2.25" drill="1.8" shape="octagon"/>
+<pad name="3" x="2.1" y="2.25" drill="1.8" shape="octagon"/>
+<pad name="4" x="-2.1" y="2.25" drill="1.8" shape="octagon"/>
+<hole x="0" y="-9.55" drill="3"/>
 </package>
 </packages>
 <symbols>
 <symbol name="DC-POWER-CONNECTOR">
-<pin name="V+" x="7.62" y="5.08" length="middle" rot="R180"/>
-<pin name="V-" x="7.62" y="-5.08" length="middle" rot="R180"/>
 <wire x1="2.54" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
 <wire x1="2.54" y1="7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
 <pin name="SHIELD" x="7.62" y="0" length="middle" rot="R180"/>
+<pin name="V+" x="7.62" y="5.08" length="middle" rot="R180"/>
+<pin name="V-" x="7.62" y="-5.08" length="middle" rot="R180"/>
 </symbol>
-<symbol name="TERMINAL-BLOCK-2POS">
-<pin name="P$1" x="-5.08" y="2.54" length="middle"/>
-<pin name="P$2" x="-5.08" y="-2.54" length="middle"/>
-<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<symbol name="DC-POWER-4POS">
+<wire x1="0" y1="5.08" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
+<pin name="1" x="2.54" y="-7.62" length="middle"/>
+<pin name="2" x="-5.08" y="-5.08" length="middle"/>
+<pin name="3" x="2.54" y="2.54" length="middle"/>
+<pin name="4" x="-5.08" y="5.08" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -587,15 +587,17 @@ center of it is 7.1mm above PCB top</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TERMINAL-BLOCK-2POS">
+<deviceset name="DC-POWER-4POS">
 <gates>
-<gate name="G$1" symbol="TERMINAL-BLOCK-2POS" x="0" y="0"/>
+<gate name="G$1" symbol="DC-POWER-4POS" x="-2.54" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="TERMINAL-BLOCK-90DEG-5MM">
+<device name="" package="DC-POWER-4POS-0050361768">
 <connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -623,8 +625,8 @@ center of it is 7.1mm above PCB top</text>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="X14" library="3D" deviceset="USB-B" device="" value="61729-0010BLF"/>
 <part name="U$1" library="AndySigler_Opentrons" deviceset="DC-POWER-CONNECTOR" device="" value="KPJX-4S-S"/>
-<part name="U$3" library="AndySigler_Opentrons" deviceset="TERMINAL-BLOCK-2POS" device="" value="20020110-G021A01LF"/>
 <part name="U$4" library="Andy_Sigler" deviceset="USB-STACKED" device="" value="AU-Y1008-2"/>
+<part name="U$5" library="AndySigler_Opentrons" deviceset="DC-POWER-4POS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -639,9 +641,9 @@ center of it is 7.1mm above PCB top</text>
 <instance part="GND5" gate="1" x="129.54" y="152.4"/>
 <instance part="X14" gate="G$1" x="162.56" y="124.46" rot="MR0"/>
 <instance part="U$1" gate="G$1" x="27.94" y="213.36"/>
-<instance part="U$3" gate="G$1" x="210.82" y="213.36" rot="MR180"/>
 <instance part="U$4" gate="G$1" x="205.74" y="123.19"/>
 <instance part="U$4" gate="G$2" x="182.88" y="123.19" rot="MR0"/>
+<instance part="U$5" gate="G$1" x="223.52" y="213.36" rot="MR180"/>
 </instances>
 <busses>
 </busses>
@@ -662,8 +664,12 @@ center of it is 7.1mm above PCB top</text>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="195.58" y1="210.82" x2="195.58" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="210.82" x2="195.58" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="P$1"/>
+<pinref part="U$5" gate="G$1" pin="4"/>
+<wire x1="195.58" y1="210.82" x2="218.44" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="210.82" x2="218.44" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="3"/>
+<wire x1="226.06" y1="210.82" x2="218.44" y2="210.82" width="0.1524" layer="91"/>
+<junction x="218.44" y="210.82"/>
 </segment>
 <segment>
 <pinref part="S1" gate="G$1" pin="P$1"/>
@@ -681,8 +687,13 @@ center of it is 7.1mm above PCB top</text>
 <junction x="172.72" y="215.9"/>
 <pinref part="U$2" gate="G$1" pin="2"/>
 <pinref part="U$2" gate="G$1" pin="1"/>
-<pinref part="U$3" gate="G$1" pin="P$2"/>
-<wire x1="172.72" y1="215.9" x2="205.74" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="215.9" x2="218.44" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="2"/>
+<wire x1="218.44" y1="215.9" x2="218.44" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="218.44" x2="218.44" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="1"/>
+<wire x1="218.44" y1="220.98" x2="226.06" y2="220.98" width="0.1524" layer="91"/>
+<junction x="218.44" y="218.44"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -761,10 +772,4 @@ center of it is 7.1mm above PCB top</text>
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
