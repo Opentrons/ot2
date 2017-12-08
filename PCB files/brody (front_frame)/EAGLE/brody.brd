@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2448,6 +2448,30 @@ Sourcxe: http://www.molex.com/pdm_docs/sd/530470210_sd.pdf</description>
 </package>
 </packages>
 </library>
+<library name="AndySigler_Opentrons">
+<packages>
+<package name="JST-2.5MM-2POS-SOCKET">
+<pad name="1" x="-1.25" y="0" drill="0.9"/>
+<pad name="2" x="1.25" y="0" drill="0.9"/>
+<wire x1="-3.75" y1="3.2" x2="3.75" y2="3.2" width="0.127" layer="21"/>
+<wire x1="3.75" y1="3.2" x2="3.75" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="-3.25" x2="-3.75" y2="3.2" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-3.25" x2="-0.85" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-3.75" x2="0.9" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="0.9" y1="-3.75" x2="0.9" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-3.25" y1="2.75" x2="3.25" y2="2.75" width="0.127" layer="21"/>
+<wire x1="3.25" y1="2.75" x2="3.25" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="-3.25" y1="-2.75" x2="-3.25" y2="2.75" width="0.127" layer="21"/>
+<wire x1="0.9" y1="-3.25" x2="3.75" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="3.25" y1="-2.75" x2="0.65" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="0.65" y1="-2.75" x2="0.65" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="0.65" y1="-3.25" x2="-0.6" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="-3.25" x2="-0.6" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="-2.75" x2="-3.25" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-3.25" x2="-3.75" y2="-3.25" width="0.127" layer="21"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2637,23 +2661,24 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="BUTTON" library="con-molex" package="53047-06" value="0530470610" x="11" y="29.5" smashed="yes" rot="MR180">
-<attribute name="OC_NEWARK" value="03M2965" x="11" y="29.5" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="OC_FARNELL" value="9733078" x="11" y="29.5" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MF" value="" x="11" y="29.5" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MPN" value="53047-0610-C" x="11" y="29.5" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="13.475" y="26.35" size="0.8128" layer="26" rot="MR0"/>
-<attribute name="HEIGHT" value="8" x="11" y="29.5" size="1.778" layer="28" rot="MR180" display="off"/>
+<element name="BUTTON" library="con-molex" package="53047-06" value="0530470610" x="11" y="31.2" smashed="yes" rot="MR180">
+<attribute name="OC_NEWARK" value="03M2965" x="11" y="31.2" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="OC_FARNELL" value="9733078" x="11" y="31.2" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MF" value="" x="11" y="31.2" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="53047-0610-C" x="11" y="31.2" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="13.475" y="28.05" size="0.8128" layer="26" rot="MR0"/>
+<attribute name="HEIGHT" value="8" x="11" y="31.2" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="RIBBON" library="adafruit" package="2X04" value="75869-132LF" x="11" y="18" smashed="yes" rot="MR180">
-<attribute name="NAME" x="7.72" y="24.025" size="1.27" layer="26" ratio="10" rot="MR180"/>
-<attribute name="HEIGHT" value="15" x="11" y="18" size="1.778" layer="28" rot="MR180" display="off"/>
+<element name="RIBBON" library="adafruit" package="2X04" value="75869-132LF" x="11" y="15.2" smashed="yes" rot="MR180">
+<attribute name="NAME" x="7.72" y="21.225" size="1.27" layer="26" ratio="10" rot="MR180"/>
+<attribute name="HEIGHT" value="15" x="11" y="15.2" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="DOOR" library="adafruit" package="JST-PH-2-SMT-RA" value="" x="11" y="4" smashed="yes" rot="MR180">
-<attribute name="NAME" x="8.96" y="12.59" size="1.27" layer="26" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="8.46" y="11.62" size="1.27" layer="28" font="vector" rot="MR180"/>
-<attribute name="HEIGHT" value="7" x="11" y="4" size="1.778" layer="28" rot="MR180" display="off"/>
+<element name="DOOR" library="adafruit" package="JST-PH-2-SMT-RA" value="" x="11" y="3.6" smashed="yes" rot="MR180">
+<attribute name="NAME" x="8.96" y="12.19" size="1.27" layer="26" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="8.46" y="11.22" size="1.27" layer="28" font="vector" rot="MR180"/>
+<attribute name="HEIGHT" value="7" x="11" y="3.6" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
+<element name="U$1" library="AndySigler_Opentrons" package="JST-2.5MM-2POS-SOCKET" value="JST-2POS-SOCKET" x="11" y="24.116" rot="MR180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2673,83 +2698,99 @@ design rules under a new name.</description>
 <vertex x="22" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
-<via x="2.3" y="7.3" extent="1-16" drill="0.4"/>
-<via x="2.3" y="11.5" extent="1-16" drill="0.4"/>
-<via x="2.2" y="16" extent="1-16" drill="0.4"/>
-<via x="2.2" y="21" extent="1-16" drill="0.4"/>
-<via x="2.708" y="30.553" extent="1-16" drill="0.4"/>
-<via x="6.3" y="31.2" extent="1-16" drill="0.4"/>
-<via x="15.7" y="31.4" extent="1-16" drill="0.4"/>
-<via x="20.1" y="26.9" extent="1-16" drill="0.4"/>
-<via x="20.3" y="6.7" extent="1-16" drill="0.4"/>
-<via x="20.3" y="10.8" extent="1-16" drill="0.4"/>
-<via x="20.1" y="15.8" extent="1-16" drill="0.4"/>
-<via x="20.1" y="21.4" extent="1-16" drill="0.4"/>
-<via x="5.8" y="1.6" extent="1-16" drill="0.4"/>
-<via x="16" y="1.7" extent="1-16" drill="0.4"/>
-<via x="10.9" y="4.6" extent="1-16" drill="0.4"/>
-<via x="12.7" y="4.6" extent="1-16" drill="0.4"/>
-<via x="9.2" y="4.6" extent="1-16" drill="0.4"/>
-<via x="13.3" y="5.9" extent="1-16" drill="0.4"/>
-<via x="16.983" y="10.494" extent="1-16" drill="0.4"/>
-<via x="4.864" y="10.743" extent="1-16" drill="0.4"/>
-<via x="14.4" y="11" extent="1-16" drill="0.4"/>
-<via x="15.8" y="12.4" extent="1-16" drill="0.4"/>
-<via x="17.1" y="13.9" extent="1-16" drill="0.4"/>
-<via x="18.2" y="15.9" extent="1-16" drill="0.4"/>
-<via x="18.1" y="18.4" extent="1-16" drill="0.4"/>
-<via x="8.6" y="6.5" extent="1-16" drill="0.4"/>
-<via x="5.1" y="23.6" extent="1-16" drill="0.4"/>
-<via x="16.8" y="8.6" extent="1-16" drill="0.4"/>
-<via x="16.7" y="24.2" extent="1-16" drill="0.4"/>
-<via x="12.72" y="26.14" extent="1-16" drill="0.4"/>
-<via x="12.085" y="24.108" extent="1-16" drill="0.4"/>
-<via x="13.144" y="13.405" extent="1-16" drill="0.4"/>
+<via x="2.3" y="23.8" extent="1-16" drill="0.4"/>
+<via x="2.7" y="30.8" extent="1-16" drill="0.4"/>
+<via x="15.4" y="30.8" extent="1-16" drill="0.4"/>
+<via x="20.3" y="26.6" extent="1-16" drill="0.4"/>
+<via x="20.2" y="6.5" extent="1-16" drill="0.4"/>
+<via x="15.9" y="1.7" extent="1-16" drill="0.4"/>
+<via x="5.9" y="1.7" extent="1-16" drill="0.4"/>
+<via x="2.2" y="6.2" extent="1-16" drill="0.4"/>
+<via x="2.2" y="15.1" extent="1-16" drill="0.4"/>
+<via x="20.2" y="14.9" extent="1-16" drill="0.4"/>
+<via x="14.2" y="18.6" extent="1-16" drill="0.4"/>
+<via x="16.2" y="16.4" extent="1-16" drill="0.4"/>
+<via x="13.4" y="15.2" extent="1-16" drill="0.4"/>
+<via x="10.7" y="19.8" extent="1-16" drill="0.4"/>
+<via x="17.6" y="22.3" extent="1-16" drill="0.4"/>
+<via x="12.6" y="27.6" extent="1-16" drill="0.4"/>
+<via x="14.9" y="7.4" extent="1-16" drill="0.4"/>
+<via x="8.2" y="12.1" extent="1-16" drill="0.4"/>
+<via x="7.8" y="7.4" extent="1-16" drill="0.4"/>
+<via x="7.9" y="15.2" extent="1-16" drill="0.4"/>
+<via x="5.5" y="19.6" extent="1-16" drill="0.4"/>
+<via x="13" y="12.5" extent="1-16" drill="0.4"/>
 </signal>
 <signal name="RED">
 <contactref element="BUTTON" pad="6"/>
 <contactref element="RIBBON" pad="3"/>
-<wire x1="9.73" y1="19.27" x2="9.73" y2="20.67" width="0.6096" layer="16"/>
-<wire x1="9.73" y1="20.67" x2="7.875" y2="22.525" width="0.6096" layer="16"/>
-<wire x1="7.875" y1="22.525" x2="7.875" y2="29.05" width="0.6096" layer="16"/>
+<wire x1="7.875" y1="30.75" x2="7.875" y2="28.675" width="0.6096" layer="1"/>
+<wire x1="7.875" y1="28.675" x2="6.8" y2="27.6" width="0.6096" layer="1"/>
+<wire x1="6.8" y1="27.6" x2="6.8" y2="19.4" width="0.6096" layer="1"/>
+<wire x1="6.8" y1="19.4" x2="9.73" y2="16.47" width="0.6096" layer="1"/>
 </signal>
 <signal name="GREEN">
 <contactref element="BUTTON" pad="5"/>
 <contactref element="RIBBON" pad="4"/>
-<wire x1="9.73" y1="16.73" x2="11" y2="18" width="0.508" layer="16"/>
-<wire x1="11" y1="18" x2="11" y2="21" width="0.508" layer="16"/>
-<wire x1="11" y1="21" x2="9.125" y2="22.875" width="0.508" layer="16"/>
-<wire x1="9.125" y1="22.875" x2="9.125" y2="29.05" width="0.508" layer="16"/>
+<wire x1="8.225" y1="20.375" x2="11" y2="17.6" width="0.6096" layer="1"/>
+<wire x1="11" y1="17.6" x2="11" y2="15.2" width="0.4064" layer="1"/>
+<wire x1="11" y1="15.2" x2="9.73" y2="13.93" width="0.6096" layer="1"/>
+<wire x1="8.225" y1="20.375" x2="8.225" y2="26.925" width="0.6096" layer="1"/>
+<wire x1="8.225" y1="26.925" x2="9.1" y2="27.8" width="0.6096" layer="1"/>
+<wire x1="9.1" y1="27.8" x2="9.1" y2="30.125" width="0.6096" layer="1"/>
+<wire x1="9.1" y1="30.125" x2="9.125" y2="30.75" width="0.6096" layer="1"/>
 </signal>
 <signal name="BUTTON">
 <contactref element="BUTTON" pad="4"/>
 <contactref element="RIBBON" pad="5"/>
-<wire x1="12.27" y1="19.27" x2="12.27" y2="21.63" width="0.508" layer="16"/>
-<wire x1="12.27" y1="21.63" x2="10.375" y2="23.525" width="0.508" layer="16"/>
-<wire x1="10.375" y1="23.525" x2="10.375" y2="29.05" width="0.508" layer="16"/>
+<wire x1="12.2" y1="16.3" x2="12.27" y2="16.47" width="0.6096" layer="1"/>
+<wire x1="10.375" y1="30.75" x2="10.375" y2="28.225" width="0.6096" layer="1"/>
+<wire x1="10.375" y1="28.225" x2="14.4" y2="24.2" width="0.6096" layer="1"/>
+<wire x1="14.4" y1="24.2" x2="14.4" y2="21.4" width="0.6096" layer="1"/>
+<wire x1="14.4" y1="21.4" x2="12.3" y2="19.3" width="0.6096" layer="1"/>
+<wire x1="12.3" y1="19.3" x2="12.3" y2="16.5" width="0.6096" layer="1"/>
+<wire x1="12.3" y1="16.5" x2="12.27" y2="16.47" width="0.6096" layer="1"/>
 </signal>
 <signal name="BLUE">
 <contactref element="BUTTON" pad="1"/>
 <contactref element="RIBBON" pad="8"/>
-<wire x1="14.81" y1="16.73" x2="16.2" y2="18.12" width="0.508" layer="16"/>
-<wire x1="16.2" y1="18.12" x2="16.2" y2="20.5" width="0.508" layer="16"/>
-<wire x1="16.2" y1="20.5" x2="14.125" y2="22.575" width="0.508" layer="16"/>
-<wire x1="14.125" y1="22.575" x2="14.125" y2="29.05" width="0.508" layer="16"/>
+<wire x1="19.7" y1="24.1" x2="19.7" y2="16.7" width="0.6096" layer="1"/>
+<wire x1="19.7" y1="16.7" x2="16.8" y2="13.8" width="0.6096" layer="1"/>
+<wire x1="16.8" y1="13.8" x2="14.44" y2="13.8" width="0.6096" layer="1"/>
+<wire x1="14.44" y1="13.8" x2="14.81" y2="13.93" width="0.6096" layer="1"/>
+<wire x1="14.125" y1="30.75" x2="14.125" y2="29.675" width="0.6096" layer="1"/>
+<wire x1="14.125" y1="29.675" x2="19.7" y2="24.1" width="0.6096" layer="1"/>
 </signal>
 <signal name="WINDOW_SWITCH_NEG">
-<contactref element="DOOR" pad="2"/>
 <contactref element="RIBBON" pad="1"/>
-<wire x1="10" y1="7.7" x2="10" y2="10.3" width="0.6096" layer="16"/>
-<wire x1="10" y1="10.3" x2="5.5" y2="14.8" width="0.6096" layer="16"/>
-<wire x1="5.5" y1="14.8" x2="5.5" y2="17.58" width="0.6096" layer="16"/>
-<wire x1="5.5" y1="17.58" x2="7.19" y2="19.27" width="0.6096" layer="16"/>
+<contactref element="U$1" pad="1"/>
+<contactref element="DOOR" pad="2"/>
+<wire x1="7.19" y1="16.47" x2="6.27" y2="16.47" width="0.6096" layer="16"/>
+<wire x1="6.27" y1="16.47" x2="4.8" y2="15" width="0.6096" layer="16"/>
+<wire x1="4.8" y1="15" x2="4.8" y2="11" width="0.6096" layer="16"/>
+<wire x1="4.8" y1="11" x2="6.7" y2="9.1" width="0.6096" layer="16"/>
+<wire x1="6.7" y1="9.1" x2="8.2" y2="9.1" width="0.6096" layer="16"/>
+<wire x1="8.2" y1="9.1" x2="10" y2="7.3" width="0.6096" layer="16"/>
+<wire x1="9.75" y1="24.116" x2="9.75" y2="22.05" width="0.6096" layer="16"/>
+<wire x1="9.75" y1="22.05" x2="7.1" y2="19.4" width="0.6096" layer="16"/>
+<wire x1="7.1" y1="19.4" x2="7.1" y2="16.56" width="0.6096" layer="16"/>
+<wire x1="7.1" y1="16.56" x2="7.19" y2="16.47" width="0.6096" layer="16"/>
 </signal>
 <signal name="WINDOW_SWITCH_POS">
 <contactref element="DOOR" pad="1"/>
 <contactref element="RIBBON" pad="2"/>
-<wire x1="12" y1="7.7" x2="12" y2="10.5" width="0.6096" layer="16"/>
-<wire x1="12" y1="10.5" x2="7.19" y2="15.31" width="0.6096" layer="16"/>
-<wire x1="7.19" y1="16.73" x2="7.19" y2="15.31" width="0.6096" layer="16"/>
+<contactref element="U$1" pad="2"/>
+<wire x1="7.19" y1="13.93" x2="7.19" y2="11.61" width="0.6096" layer="16"/>
+<wire x1="7.19" y1="11.61" x2="8" y2="10.8" width="0.6096" layer="16"/>
+<wire x1="8" y1="10.8" x2="11.3" y2="10.8" width="0.6096" layer="16"/>
+<wire x1="11.3" y1="10.8" x2="12" y2="10.1" width="0.6096" layer="16"/>
+<wire x1="12" y1="10.1" x2="12" y2="7.3" width="0.6096" layer="16"/>
+<wire x1="12.25" y1="24.116" x2="12.484" y2="24.216" width="0.6096" layer="16"/>
+<wire x1="12.484" y1="24.216" x2="18.7" y2="18" width="0.6096" layer="16"/>
+<wire x1="18.7" y1="18" x2="18.7" y2="13.4" width="0.6096" layer="16"/>
+<wire x1="18.7" y1="13.4" x2="15.9" y2="10.6" width="0.6096" layer="16"/>
+<wire x1="15.9" y1="10.6" x2="12.5" y2="10.6" width="0.6096" layer="16"/>
+<wire x1="12.5" y1="10.6" x2="12" y2="10.1" width="0.6096" layer="16"/>
 </signal>
 </signals>
 </board>
