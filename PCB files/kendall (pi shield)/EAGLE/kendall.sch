@@ -1339,6 +1339,11 @@ Source: 3M</description>
 <label x="193.04" y="198.12" size="1.27" layer="95" xref="yes"/>
 <pinref part="X2" gate="-10" pin="KL"/>
 </segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="27"/>
+<wire x1="45.72" y1="198.12" x2="35.56" y2="198.12" width="0.1524" layer="91"/>
+<label x="35.56" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SMOOTHIE_RX_PI" class="0">
 <segment>
