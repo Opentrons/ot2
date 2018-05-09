@@ -6,11 +6,11 @@ Opentrons strives to make all of our technology as open to customization and ext
 
 Included are:
 - PCB design files for the key electrical boards in the robot, including our version of the smoothieboard (smoothieware.org) motor controller board
-- Electrical schematic of robotic wiring and pin-outs 
+- Electrical schematic of robotic wiring and pin-outs
 - DXF file for the OT-2 deck showing exact dimensions of the removable deck and slots
 - Scale models of the full robot with all the dimensions needed to design hardware integrated with OT-2
 
-If there are files missing that you need to do your work, please reach out to info@opentrons.com and we will be happy to discuss how we can provide you with what you require. We love hearing from our community! 
+If there are files missing that you need to do your work, please reach out to info@opentrons.com and we will be happy to discuss how we can provide you with what you require. We love hearing from our community!
 
 Thanks,
 
